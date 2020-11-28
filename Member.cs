@@ -9,6 +9,7 @@ namespace LibraryManagementSystem
     public class Member
     {
 
+
         public int MemberId { get; set; }
         public string MemberName { get; set; }
         public string MemberPhoneNumber { get; set; }

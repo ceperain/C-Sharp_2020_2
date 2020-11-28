@@ -57,6 +57,7 @@ namespace LibraryManagementSystem
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.userControl4 = new LibraryManagementSystem.UserControl4();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -207,9 +208,9 @@ namespace LibraryManagementSystem
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 62);
+            this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1136, 629);
+            this.panel2.Size = new System.Drawing.Size(1136, 632);
             this.panel2.TabIndex = 2;
             // 
             // flowLayoutPanel2
@@ -226,11 +227,12 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Controls.Add(this.button15);
             this.flowLayoutPanel2.Controls.Add(this.button16);
             this.flowLayoutPanel2.Controls.Add(this.userControl41);
+            
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1130, 59);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1130, 57);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // button7
@@ -305,8 +307,9 @@ namespace LibraryManagementSystem
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(79, 60);
             this.button9.TabIndex = 12;
-            this.button9.Text = "파일로 저장";
+            this.button9.Text = "ISBN\r\n중복체크";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -315,16 +318,17 @@ namespace LibraryManagementSystem
             this.button10.Location = new System.Drawing.Point(229, 0);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 60);
+            this.button10.Size = new System.Drawing.Size(115, 60);
             this.button10.TabIndex = 13;
-            this.button10.Text = "중복체크";
+            this.button10.Text = "청구기호 \r\n중복체크";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
             this.button11.AutoSize = true;
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.Location = new System.Drawing.Point(304, 0);
+            this.button11.Location = new System.Drawing.Point(344, 0);
             this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 60);
@@ -361,7 +365,7 @@ namespace LibraryManagementSystem
             // 
             this.button12.AutoSize = true;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Location = new System.Drawing.Point(379, 0);
+            this.button12.Location = new System.Drawing.Point(419, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 60);
@@ -373,7 +377,7 @@ namespace LibraryManagementSystem
             // 
             this.button13.AutoSize = true;
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Location = new System.Drawing.Point(454, 0);
+            this.button13.Location = new System.Drawing.Point(494, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 60);
@@ -420,7 +424,7 @@ namespace LibraryManagementSystem
             // 
             this.button14.AutoSize = true;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(529, 0);
+            this.button14.Location = new System.Drawing.Point(569, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 60);
@@ -432,7 +436,7 @@ namespace LibraryManagementSystem
             // 
             this.button15.AutoSize = true;
             this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.Location = new System.Drawing.Point(604, 0);
+            this.button15.Location = new System.Drawing.Point(644, 0);
             this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 60);
@@ -444,7 +448,7 @@ namespace LibraryManagementSystem
             // 
             this.button16.AutoSize = true;
             this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.Location = new System.Drawing.Point(679, 0);
+            this.button16.Location = new System.Drawing.Point(719, 0);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(87, 60);
@@ -573,6 +577,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
+        private UserControl4 userControl4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -588,5 +593,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel panel2;
         private UserControl4 userControl41;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

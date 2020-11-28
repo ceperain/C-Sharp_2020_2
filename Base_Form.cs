@@ -55,12 +55,37 @@ namespace LibraryManagementSystem
         }
         private void button8_Click(object sender, EventArgs e)
         {
-            
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            BookLoad_Form form = new BookLoad_Form();
+            form.ShowDialog();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
             Check_Form form = new Check_Form();
+            form.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            ISBN_Redundant_Form form = new ISBN_Redundant_Form();
+            form.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            Id_Redundant_Form form = new Id_Redundant_Form();
             form.ShowDialog();
         }
     }

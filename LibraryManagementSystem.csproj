@@ -52,6 +52,19 @@
     <Compile Include="Base_Form.Designer.cs">
       <DependentUpon>Base_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookLoad_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookLoad_Form.Designer.cs">
+      <DependentUpon>BookLoad_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books.cs" />
+    <Compile Include="Check_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.Designer.cs">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +98,12 @@
     </Compile>
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookLoad_Form.resx">
+      <DependentUpon>BookLoad_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Form.resx">
+      <DependentUpon>Check_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

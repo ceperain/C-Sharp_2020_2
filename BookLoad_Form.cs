@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class UserControl1 : UserControl
+    public partial class BookLoad_Form : Form
     {
-        public UserControl1()
+        public BookLoad_Form()
         {
             InitializeComponent();
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            MemberSearch.PopUp();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

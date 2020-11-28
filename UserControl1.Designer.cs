@@ -100,6 +100,7 @@ namespace LibraryManagementSystem
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(1130, 629);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel1_2
             // 

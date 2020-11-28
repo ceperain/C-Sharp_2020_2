@@ -21,5 +21,10 @@ namespace LibraryManagementSystem
         {
             MemberSearch.PopUp();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

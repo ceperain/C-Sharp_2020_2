@@ -227,7 +227,7 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Controls.Add(this.button15);
             this.flowLayoutPanel2.Controls.Add(this.button16);
             this.flowLayoutPanel2.Controls.Add(this.userControl41);
-            this.flowLayoutPanel2.Controls.Add(this.checkBox1);
+            
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -496,16 +496,6 @@ namespace LibraryManagementSystem
             this.tabPage6.Text = "게시판";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 698);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 16);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // userControl41
             // 
             this.userControl41.Location = new System.Drawing.Point(3, 63);
@@ -587,6 +577,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
+        private UserControl4 userControl4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;

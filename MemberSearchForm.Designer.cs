@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementSystem
 {
-    partial class Form2
+    partial class MemberSearchForm
     {
         /// <summary>
         /// Required designer variable.
@@ -190,7 +190,7 @@
             this.Column13.HeaderText = "등록일";
             this.Column13.Name = "Column13";
             // 
-            // Form2
+            // MemberSearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,8 +202,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "MemberSearchForm";
+            this.Text = "회원검색";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -53,5 +53,15 @@ namespace LibraryManagementSystem
             UserControl3 userControl = new UserControl3();
             panel1.Controls.Add(userControl);
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Check_Form form = new Check_Form();
+            form.ShowDialog();
+        }
     }
 }

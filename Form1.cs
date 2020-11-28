@@ -12,12 +12,12 @@ namespace LibraryManagementSystem
 {
     public partial class Form1 : Form
     {
-        public Panel p1;
+        public Panel p1, p2;
         public Form1()
         {
             InitializeComponent();
             p1 = panel1;
-            
+            p2 = panel2;
 
         }
 

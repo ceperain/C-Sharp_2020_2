@@ -10,7 +10,7 @@ namespace LibraryManagementSystem
     {
         public static void PopUp()
         {
-            Form2 form2 = new Form2();
+            MemberSearchForm form2 = new MemberSearchForm();
             form2.ShowDialog();
         }
     }

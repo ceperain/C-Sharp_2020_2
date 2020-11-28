@@ -46,5 +46,16 @@ namespace LibraryManagementSystem
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Check_Form form = new Check_Form();
+            form.ShowDialog();
+        }
     }
 }

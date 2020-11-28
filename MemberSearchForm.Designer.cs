@@ -38,7 +38,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(13, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
@@ -62,15 +61,23 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(72, 9);
+            this.comboBox1.Items.AddRange(new object[] {
+            "회원번호",
+            "회원명",
+            "회원상태",
+            "주소",
+            "전화번호",
+            "이메일"});
+            this.comboBox1.Location = new System.Drawing.Point(72, 14);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 9);
+            this.textBox1.Location = new System.Drawing.Point(200, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(291, 21);
             this.textBox1.TabIndex = 2;
@@ -81,7 +88,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
+            this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -90,7 +97,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
+            this.button2.Text = "전체선택";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -99,7 +106,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
+            this.button3.Text = "불러오기";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -109,7 +116,6 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4,
             this.Column5,
             this.Column6,
             this.Column7,
@@ -139,11 +145,6 @@
             // 
             this.Column3.HeaderText = "회원명";
             this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "회원등급";
-            this.Column4.Name = "Column4";
             // 
             // Column5
             // 
@@ -222,7 +223,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;

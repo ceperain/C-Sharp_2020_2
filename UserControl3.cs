@@ -16,5 +16,10 @@ namespace LibraryManagementSystem
         {
             InitializeComponent();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            MemberSearch.PopUp();
+        }
     }
 }

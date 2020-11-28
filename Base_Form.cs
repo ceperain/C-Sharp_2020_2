@@ -47,6 +47,12 @@ namespace LibraryManagementSystem
             panel2.Controls.Add(userControl);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl = new UserControl3();
+            panel1.Controls.Add(userControl);
+        }
         private void button8_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();

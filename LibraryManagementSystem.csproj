@@ -59,6 +59,12 @@
       <DependentUpon>Base_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Books.cs" />
+    <Compile Include="Check_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.Designer.cs">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,18 @@
     </Compile>
     <Compile Include="MemberSearchForm.Designer.cs">
       <DependentUpon>MemberSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Id_Redundant_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Id_Redundant_Form.Designer.cs">
+      <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISBN_Redundant_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISBN_Redundant_Form.Designer.cs">
+      <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Member.cs" />
     <Compile Include="MemberSearch.cs" />
@@ -108,11 +126,20 @@
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Check_Form.resx">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberSearchForm.resx">
       <DependentUpon>MemberSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Id_Redundant_Form.resx">
+      <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISBN_Redundant_Form.resx">
+      <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

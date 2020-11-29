@@ -59,6 +59,12 @@
       <DependentUpon>Base_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Books.cs" />
+    <Compile Include="bookSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookSearch.Designer.cs">
+      <DependentUpon>bookSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Check_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookSearch.resx">
+      <DependentUpon>bookSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Check_Form.resx">
       <DependentUpon>Check_Form.cs</DependentUpon>

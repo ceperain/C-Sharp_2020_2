@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class bookSearch : UserControl
+    public partial class BookSearch : Form
     {
-        public bookSearch()
+        public BookSearch()
         {
             InitializeComponent();
         }
+
+        
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }

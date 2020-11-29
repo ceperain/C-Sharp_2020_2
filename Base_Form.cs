@@ -63,5 +63,11 @@ namespace LibraryManagementSystem
             Check_Form form = new Check_Form();
             form.ShowDialog();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            BookSearch bookSearchForm = new BookSearch();
+            bookSearchForm.Show();
+        }
     }
 }

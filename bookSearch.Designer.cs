@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class bookSearch
+    partial class BookSearch
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -67,7 +67,7 @@ namespace LibraryManagementSystem
             // commonSearch
             // 
             this.commonSearch.AutoSize = true;
-            this.commonSearch.Location = new System.Drawing.Point(21, 42);
+            this.commonSearch.Location = new System.Drawing.Point(20, 13);
             this.commonSearch.Name = "commonSearch";
             this.commonSearch.Size = new System.Drawing.Size(71, 16);
             this.commonSearch.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace LibraryManagementSystem
             // sectionSearch
             // 
             this.sectionSearch.AutoSize = true;
-            this.sectionSearch.Location = new System.Drawing.Point(21, 75);
+            this.sectionSearch.Location = new System.Drawing.Point(20, 46);
             this.sectionSearch.Name = "sectionSearch";
             this.sectionSearch.Size = new System.Drawing.Size(71, 16);
             this.sectionSearch.TabIndex = 1;
@@ -89,7 +89,7 @@ namespace LibraryManagementSystem
             // searchLabel
             // 
             this.searchLabel.AutoSize = true;
-            this.searchLabel.Location = new System.Drawing.Point(147, 44);
+            this.searchLabel.Location = new System.Drawing.Point(146, 15);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(53, 12);
             this.searchLabel.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace LibraryManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 77);
+            this.label2.Location = new System.Drawing.Point(122, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 3;
@@ -107,21 +107,21 @@ namespace LibraryManagementSystem
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 42);
+            this.comboBox1.Location = new System.Drawing.Point(205, 13);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 4;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(206, 74);
+            this.textBox1.Location = new System.Drawing.Point(205, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 21);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(424, 74);
+            this.textBox2.Location = new System.Drawing.Point(423, 45);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 21);
             this.textBox2.TabIndex = 6;
@@ -129,7 +129,7 @@ namespace LibraryManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(380, 44);
+            this.label3.Location = new System.Drawing.Point(379, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 7;
@@ -137,7 +137,7 @@ namespace LibraryManagementSystem
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(424, 41);
+            this.textBox3.Location = new System.Drawing.Point(423, 12);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(314, 21);
             this.textBox3.TabIndex = 8;
@@ -145,7 +145,7 @@ namespace LibraryManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(341, 77);
+            this.label4.Location = new System.Drawing.Point(340, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 12);
             this.label4.TabIndex = 9;
@@ -153,7 +153,7 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(755, 39);
+            this.button1.Location = new System.Drawing.Point(754, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -162,7 +162,7 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(755, 72);
+            this.button2.Location = new System.Drawing.Point(754, 43);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
@@ -171,7 +171,7 @@ namespace LibraryManagementSystem
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(21, 109);
+            this.button3.Location = new System.Drawing.Point(20, 80);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 12;
@@ -199,7 +199,7 @@ namespace LibraryManagementSystem
             this.Column15,
             this.Column16,
             this.Column17});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 139);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 110);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(809, 304);
@@ -292,17 +292,19 @@ namespace LibraryManagementSystem
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(755, 449);
+            this.button4.Location = new System.Drawing.Point(754, 420);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 35);
             this.button4.TabIndex = 14;
             this.button4.Text = "닫기";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // bookSearch
+            // BookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(853, 463);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
@@ -318,8 +320,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.sectionSearch);
             this.Controls.Add(this.commonSearch);
-            this.Name = "bookSearch";
-            this.Size = new System.Drawing.Size(859, 487);
+            this.Name = "BookSearch";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

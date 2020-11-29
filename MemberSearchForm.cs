@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form2 : Form
+    public partial class MemberSearchForm : Form
     {
-        public Form2()
+        public MemberSearchForm()
         {
             InitializeComponent();
         }

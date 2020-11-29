@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class ISBN_Redundant_Form : Form
     {
-        public Panel p1, p2;
-        public Form1()
+        public ISBN_Redundant_Form()
         {
             InitializeComponent();
-            p1 = panel1;
-            p2 = panel2;
-
         }
-
     }
 }

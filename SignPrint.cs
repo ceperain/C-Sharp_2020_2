@@ -10,13 +10,21 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class BookInformation : Form
+    public partial class SignPrint : Form
     {
-        public BookInformation()
+        public SignPrint()
         {
             InitializeComponent();
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SignPrint_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

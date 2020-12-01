@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace LibraryManagementSystem
 {
     partial class BookInformation
@@ -145,10 +147,16 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.submitNumber);
             this.Name = "BookInformation";
             this.Size = new System.Drawing.Size(1130, 630);
+            this.Load += new System.EventHandler(this.BookInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void BookInformation_Load(object sender, EventArgs e)
+        {
+            
         }
 
         #endregion

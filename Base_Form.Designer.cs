@@ -52,11 +52,11 @@ namespace LibraryManagementSystem
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.userControl41 = new LibraryManagementSystem.UserControl4();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.userControl41 = new LibraryManagementSystem.UserControl4();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -333,6 +333,7 @@ namespace LibraryManagementSystem
             this.button14.TabIndex = 17;
             this.button14.Text = "도서배가";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -358,13 +359,7 @@ namespace LibraryManagementSystem
             this.button16.TabIndex = 19;
             this.button16.Text = "청구기호출력";
             this.button16.UseVisualStyleBackColor = true;
-            // 
-            // userControl41
-            // 
-            this.userControl41.Location = new System.Drawing.Point(3, 63);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1130, 629);
-            this.userControl41.TabIndex = 20;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // tabPage3
             // 
@@ -405,6 +400,13 @@ namespace LibraryManagementSystem
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "게시판";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // userControl41
+            // 
+            this.userControl41.Location = new System.Drawing.Point(3, 63);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1130, 629);
+            this.userControl41.TabIndex = 20;
             // 
             // Base_Form
             // 

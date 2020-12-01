@@ -72,7 +72,20 @@ namespace LibraryManagementSystem
 
         private void button15_Click(object sender, EventArgs e)
         {
+            BarcodePrint barcodePrint = new BarcodePrint();
+            barcodePrint.Show();
+        }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            BookInformation bookInformation = new BookInformation();
+            bookInformation.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            SignPrint signPrint = new SignPrint();
+            signPrint.Show();
         }
     }
 }

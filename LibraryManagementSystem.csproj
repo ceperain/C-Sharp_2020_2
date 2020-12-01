@@ -52,6 +52,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodePrint.Designer.cs">
+      <DependentUpon>BarcodePrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Base_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     <Compile Include="UserControl7.Designer.cs">
       <DependentUpon>UserControl7.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarcodePrint.resx">
+      <DependentUpon>BarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
     </EmbeddedResource>

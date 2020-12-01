@@ -67,9 +67,10 @@ namespace LibraryManagementSystem
             // commonSearch
             // 
             this.commonSearch.AutoSize = true;
+            this.commonSearch.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.commonSearch.Location = new System.Drawing.Point(20, 13);
             this.commonSearch.Name = "commonSearch";
-            this.commonSearch.Size = new System.Drawing.Size(71, 16);
+            this.commonSearch.Size = new System.Drawing.Size(81, 17);
             this.commonSearch.TabIndex = 0;
             this.commonSearch.TabStop = true;
             this.commonSearch.Text = "일반검색";
@@ -78,9 +79,10 @@ namespace LibraryManagementSystem
             // sectionSearch
             // 
             this.sectionSearch.AutoSize = true;
+            this.sectionSearch.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.sectionSearch.Location = new System.Drawing.Point(20, 46);
             this.sectionSearch.Name = "sectionSearch";
-            this.sectionSearch.Size = new System.Drawing.Size(71, 16);
+            this.sectionSearch.Size = new System.Drawing.Size(81, 17);
             this.sectionSearch.TabIndex = 1;
             this.sectionSearch.TabStop = true;
             this.sectionSearch.Text = "구간검색";
@@ -89,18 +91,20 @@ namespace LibraryManagementSystem
             // searchLabel
             // 
             this.searchLabel.AutoSize = true;
-            this.searchLabel.Location = new System.Drawing.Point(146, 15);
+            this.searchLabel.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.searchLabel.Location = new System.Drawing.Point(136, 15);
             this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(53, 12);
+            this.searchLabel.Size = new System.Drawing.Size(63, 13);
             this.searchLabel.TabIndex = 2;
             this.searchLabel.Text = "검색기준";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(122, 48);
+            this.label2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(108, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "시작등록번호";
             // 
@@ -121,7 +125,7 @@ namespace LibraryManagementSystem
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(423, 45);
+            this.textBox2.Location = new System.Drawing.Point(434, 45);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 21);
             this.textBox2.TabIndex = 6;
@@ -129,15 +133,16 @@ namespace LibraryManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(379, 15);
+            this.label3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(379, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "검색어";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(423, 12);
+            this.textBox3.Location = new System.Drawing.Point(434, 12);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(314, 21);
             this.textBox3.TabIndex = 8;
@@ -145,15 +150,17 @@ namespace LibraryManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(340, 48);
+            this.label4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(337, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
+            this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "종료등록번호";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(754, 10);
+            this.button1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(755, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -162,7 +169,8 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(754, 43);
+            this.button2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Location = new System.Drawing.Point(755, 44);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
@@ -171,9 +179,10 @@ namespace LibraryManagementSystem
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(20, 80);
+            this.button3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.Location = new System.Drawing.Point(20, 69);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(81, 34);
             this.button3.TabIndex = 12;
             this.button3.Text = "전체선택";
             this.button3.UseVisualStyleBackColor = true;
@@ -292,6 +301,7 @@ namespace LibraryManagementSystem
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.Location = new System.Drawing.Point(754, 420);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(76, 35);

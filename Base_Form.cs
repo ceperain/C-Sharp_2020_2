@@ -62,15 +62,6 @@ namespace LibraryManagementSystem
             form.ShowDialog();
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            panel2.Controls.Clear();
-            UserControl7 userControl = new UserControl7();
-            panel2.Controls.Add(userControl);
-            Check_Form form = new Check_Form();
-            form.ShowDialog();
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
@@ -87,6 +78,39 @@ namespace LibraryManagementSystem
             panel2.Controls.Add(userControl);
             Id_Redundant_Form form = new Id_Redundant_Form();
             form.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            Check_Form form = new Check_Form();
+            form.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            BookSearch bookSearchForm = new BookSearch();
+            bookSearchForm.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            BarcodePrint barcodePrint = new BarcodePrint();
+            barcodePrint.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            BookInformation bookInformation = new BookInformation();
+            bookInformation.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            SignPrint signPrint = new SignPrint();
+            signPrint.Show();
         }
     }
 }

@@ -65,11 +65,26 @@
     <Compile Include="Check_Form.Designer.cs">
       <DependentUpon>Check_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs" />
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Id_Redundant_Form.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Id_Redundant_Form.Designer.cs">
+      <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISBN_Redundant_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISBN_Redundant_Form.Designer.cs">
+      <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
     <Compile Include="MemberSearch.cs" />
+    <Compile Include="MemberSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSearchForm.Designer.cs">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl1.cs">
@@ -84,11 +99,23 @@
     <Compile Include="UserControl2.Designer.cs">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl4.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl7.Designer.cs">
+      <DependentUpon>UserControl7.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
@@ -99,8 +126,15 @@
     <EmbeddedResource Include="Check_Form.resx">
       <DependentUpon>Check_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form3.resx" />
+    <EmbeddedResource Include="Id_Redundant_Form.resx">
+      <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISBN_Redundant_Form.resx">
+      <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSearchForm.resx">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,8 +151,14 @@
     <EmbeddedResource Include="UserControl2.resx">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl7.resx">
+      <DependentUpon>UserControl7.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

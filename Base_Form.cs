@@ -36,8 +36,8 @@ namespace LibraryManagementSystem
         private void button4_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            UserControl4 userControl = new UserControl4();
-            panel1.Controls.Add(userControl);
+            UserControl4 userControl4 = new UserControl4();
+            panel1.Controls.Add(userControl4);
         }
 
         private void button7_Click(object sender, EventArgs e)

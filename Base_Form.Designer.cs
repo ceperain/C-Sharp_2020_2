@@ -52,7 +52,6 @@ namespace LibraryManagementSystem
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.UserControl4 = new LibraryManagementSystem.UserControl4();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -226,7 +225,6 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Controls.Add(this.button14);
             this.flowLayoutPanel2.Controls.Add(this.button15);
             this.flowLayoutPanel2.Controls.Add(this.button16);
-            this.flowLayoutPanel2.Controls.Add(this.UserControl4);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -404,13 +402,6 @@ namespace LibraryManagementSystem
             this.tabPage6.Text = "게시판";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // UserControl4
-            // 
-            this.UserControl4.Location = new System.Drawing.Point(3, 63);
-            this.UserControl4.Name = "UserControl4";
-            this.UserControl4.Size = new System.Drawing.Size(1130, 629);
-            this.UserControl4.TabIndex = 20;
-            // 
             // Base_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -459,7 +450,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel panel2;
-        private UserControl4 UserControl4;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

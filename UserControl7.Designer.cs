@@ -39,8 +39,8 @@ namespace LibraryManagementSystem
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
@@ -59,13 +59,13 @@ namespace LibraryManagementSystem
             this.label20 = new System.Windows.Forms.Label();
             this.txtCopy = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtBox = new System.Windows.Forms.TextBox();
+            this.txtCharge = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.txtAuthorId = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
-            this.txtNameId = new System.Windows.Forms.TextBox();
+            this.txtSortId = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtSeperate = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -102,6 +102,7 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.Location = new System.Drawing.Point(23, 23);
             this.button1.Name = "button1";
@@ -112,6 +113,7 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button2.Location = new System.Drawing.Point(104, 23);
             this.button2.Name = "button2";
@@ -122,6 +124,7 @@ namespace LibraryManagementSystem
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button3.Location = new System.Drawing.Point(279, 23);
             this.button3.Name = "button3";
@@ -132,6 +135,7 @@ namespace LibraryManagementSystem
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.Location = new System.Drawing.Point(360, 23);
             this.button4.Name = "button4";
@@ -142,6 +146,7 @@ namespace LibraryManagementSystem
             // 
             // button5
             // 
+            this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button5.Location = new System.Drawing.Point(441, 23);
             this.button5.Name = "button5";
@@ -173,35 +178,35 @@ namespace LibraryManagementSystem
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button8.Location = new System.Drawing.Point(777, 61);
+            this.button8.Location = new System.Drawing.Point(881, 61);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 30);
             this.button8.TabIndex = 9;
-            this.button8.Text = "신규";
+            this.button8.Text = "수정";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // btnSave
+            // button9
             // 
-            this.btnSave.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnSave.Location = new System.Drawing.Point(881, 61);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 30);
-            this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "저장";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button9.Location = new System.Drawing.Point(778, 61);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 30);
+            this.button9.TabIndex = 10;
+            this.button9.Text = "저장";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // btnDelete
+            // button10
             // 
-            this.btnDelete.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnDelete.Location = new System.Drawing.Point(983, 61);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 30);
-            this.btnDelete.TabIndex = 11;
-            this.btnDelete.Text = "삭제";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button10.Location = new System.Drawing.Point(983, 61);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 30);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "삭제";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label1
             // 
@@ -247,13 +252,13 @@ namespace LibraryManagementSystem
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.txtCopy);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.txtBox);
+            this.groupBox1.Controls.Add(this.txtCharge);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.button13);
             this.groupBox1.Controls.Add(this.txtAuthorId);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.txtNameId);
+            this.groupBox1.Controls.Add(this.txtSortId);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.txtSeperate);
             this.groupBox1.Controls.Add(this.label15);
@@ -310,6 +315,7 @@ namespace LibraryManagementSystem
             // 
             // button15
             // 
+            this.button15.Enabled = false;
             this.button15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button15.Location = new System.Drawing.Point(484, 36);
             this.button15.Name = "button15";
@@ -320,7 +326,7 @@ namespace LibraryManagementSystem
             // 
             // textBox13
             // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox13.BackColor = System.Drawing.Color.Silver;
             this.textBox13.Location = new System.Drawing.Point(349, 33);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
@@ -362,6 +368,7 @@ namespace LibraryManagementSystem
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
             this.label22.Location = new System.Drawing.Point(398, 281);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(63, 13);
@@ -387,6 +394,7 @@ namespace LibraryManagementSystem
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
             this.label21.Location = new System.Drawing.Point(218, 281);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(63, 13);
@@ -443,14 +451,14 @@ namespace LibraryManagementSystem
             this.label19.TabIndex = 50;
             this.label19.Text = "복본";
             // 
-            // txtBox
+            // txtCharge
             // 
-            this.txtBox.BackColor = System.Drawing.Color.Silver;
-            this.txtBox.Location = new System.Drawing.Point(66, 390);
-            this.txtBox.Multiline = true;
-            this.txtBox.Name = "txtBox";
-            this.txtBox.Size = new System.Drawing.Size(62, 29);
-            this.txtBox.TabIndex = 49;
+            this.txtCharge.BackColor = System.Drawing.Color.White;
+            this.txtCharge.Location = new System.Drawing.Point(66, 390);
+            this.txtCharge.Multiline = true;
+            this.txtCharge.Name = "txtCharge";
+            this.txtCharge.Size = new System.Drawing.Size(62, 29);
+            this.txtCharge.TabIndex = 49;
             // 
             // label18
             // 
@@ -501,13 +509,13 @@ namespace LibraryManagementSystem
             this.button12.Text = "검색";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // txtNameId
+            // txtSortId
             // 
-            this.txtNameId.Location = new System.Drawing.Point(212, 350);
-            this.txtNameId.Multiline = true;
-            this.txtNameId.Name = "txtNameId";
-            this.txtNameId.Size = new System.Drawing.Size(83, 29);
-            this.txtNameId.TabIndex = 44;
+            this.txtSortId.Location = new System.Drawing.Point(212, 350);
+            this.txtSortId.Multiline = true;
+            this.txtSortId.Name = "txtSortId";
+            this.txtSortId.Size = new System.Drawing.Size(83, 29);
+            this.txtSortId.TabIndex = 44;
             // 
             // label16
             // 
@@ -561,6 +569,7 @@ namespace LibraryManagementSystem
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
             this.label13.Location = new System.Drawing.Point(0, 281);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(63, 13);
@@ -623,6 +632,7 @@ namespace LibraryManagementSystem
             // 
             // txtPublish
             // 
+            this.txtPublish.BackColor = System.Drawing.Color.White;
             this.txtPublish.Location = new System.Drawing.Point(319, 190);
             this.txtPublish.Multiline = true;
             this.txtPublish.Name = "txtPublish";
@@ -633,6 +643,7 @@ namespace LibraryManagementSystem
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(264, 198);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
@@ -772,6 +783,7 @@ namespace LibraryManagementSystem
             // 
             // button14
             // 
+            this.button14.Enabled = false;
             this.button14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button14.Location = new System.Drawing.Point(741, 23);
             this.button14.Name = "button14";
@@ -799,8 +811,8 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.button11);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -821,11 +833,6 @@ namespace LibraryManagementSystem
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -835,8 +842,8 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button11;
@@ -845,13 +852,13 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtCopy;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtBox;
+        private System.Windows.Forms.TextBox txtCharge;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox txtAuthorId;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox txtNameId;
+        private System.Windows.Forms.TextBox txtSortId;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtSeperate;
         private System.Windows.Forms.Label label15;

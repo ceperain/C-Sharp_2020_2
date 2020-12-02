@@ -56,5 +56,9 @@ namespace LibraryManagementSystem
 
         }
 
+        private void txtPublishDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

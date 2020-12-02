@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class UserControl1 : UserControl
+    public partial class DeleteUser : Form
     {
-        public UserControl1()
+        public DeleteUser()
         {
             InitializeComponent();
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            MemberSearch.PopUp();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
+        private void deleteUser_Load(object sender, EventArgs e)
         {
 
         }

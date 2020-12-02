@@ -504,27 +504,29 @@ namespace LibraryManagementSystem
             this.button8.TabIndex = 11;
             this.button8.Text = "불러오기";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
             this.button9.AutoSize = true;
             this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.Location = new System.Drawing.Point(176, 0);
+            this.button9.Location = new System.Drawing.Point(150, 0);
             this.button9.Margin = new System.Windows.Forms.Padding(0);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(111, 75);
+            this.button9.Size = new System.Drawing.Size(95, 60);
             this.button9.TabIndex = 12;
-            this.button9.Text = "파일로 저장";
+            this.button9.Text = "저장하기";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
             this.button10.AutoSize = true;
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.Location = new System.Drawing.Point(287, 0);
+            this.button10.Location = new System.Drawing.Point(245, 0);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(88, 75);
+            this.button10.Size = new System.Drawing.Size(75, 60);
             this.button10.TabIndex = 13;
             this.button10.Text = "중복체크";
             this.button10.UseVisualStyleBackColor = true;
@@ -533,19 +535,20 @@ namespace LibraryManagementSystem
             // 
             this.button11.AutoSize = true;
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.Location = new System.Drawing.Point(375, 0);
+            this.button11.Location = new System.Drawing.Point(320, 0);
             this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(88, 75);
             this.button11.TabIndex = 14;
             this.button11.Text = "장서점검";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
             this.button12.AutoSize = true;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Location = new System.Drawing.Point(463, 0);
+            this.button12.Location = new System.Drawing.Point(395, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(88, 75);
@@ -557,7 +560,7 @@ namespace LibraryManagementSystem
             // 
             this.button13.AutoSize = true;
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Location = new System.Drawing.Point(551, 0);
+            this.button13.Location = new System.Drawing.Point(470, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(88, 75);
@@ -569,10 +572,10 @@ namespace LibraryManagementSystem
             // 
             this.button14.AutoSize = true;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(639, 0);
+            this.button14.Location = new System.Drawing.Point(545, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(88, 75);
+            this.button14.Size = new System.Drawing.Size(75, 60);
             this.button14.TabIndex = 17;
             this.button14.Text = "도서배가";
             this.button14.UseVisualStyleBackColor = true;
@@ -581,7 +584,7 @@ namespace LibraryManagementSystem
             // 
             this.button15.AutoSize = true;
             this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.Location = new System.Drawing.Point(727, 0);
+            this.button15.Location = new System.Drawing.Point(620, 0);
             this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(105, 75);
@@ -593,7 +596,7 @@ namespace LibraryManagementSystem
             // 
             this.button16.AutoSize = true;
             this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.Location = new System.Drawing.Point(832, 0);
+            this.button16.Location = new System.Drawing.Point(695, 0);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(122, 75);
@@ -761,6 +764,8 @@ namespace LibraryManagementSystem
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Base_Form";
             this.Text = "Base_Form";
+            this.Load += new System.EventHandler(this.Base_Form_Load);
+            this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

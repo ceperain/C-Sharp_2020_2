@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LibraryManagementSystem
 {
@@ -16,6 +17,12 @@ namespace LibraryManagementSystem
         public Base_Form()
         {
             InitializeComponent();
+            Text = "도서 대여 프로그램";
+        }
+
+        private void Base_Form_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +79,7 @@ namespace LibraryManagementSystem
             panel2.Controls.Add(userControl);
             ISBN_Redundant_Form form = new ISBN_Redundant_Form();
             form.ShowDialog();
+            BookManager.Save();
         }
 
         private void button10_Click(object sender, EventArgs e)

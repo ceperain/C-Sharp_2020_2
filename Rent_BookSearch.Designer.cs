@@ -75,6 +75,7 @@ namespace LibraryManagementSystem
             this.button1.TabIndex = 10;
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -106,7 +107,7 @@ namespace LibraryManagementSystem
             this.label1.TabIndex = 7;
             this.label1.Text = "검색구분";
             // 
-            // BookSearch
+            // Rent_BookSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +119,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Name = "BookSearch";
+            this.Name = "Rent_BookSearch";
             this.Text = "도서검색";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

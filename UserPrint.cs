@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Check_Form : Form
+    public partial class UserPrint : Form
     {
-        public Check_Form()
+        public UserPrint()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

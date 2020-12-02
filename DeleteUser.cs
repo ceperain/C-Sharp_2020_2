@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Check_Form : Form
+    public partial class DeleteUser : Form
     {
-        public Check_Form()
+        public DeleteUser()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void deleteUser_Load(object sender, EventArgs e)
         {
 
         }

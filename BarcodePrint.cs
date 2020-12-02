@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Check_Form : Form
+    public partial class BarcodePrint : Form
     {
-        public Check_Form()
+        public BarcodePrint()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class BookSearch
+    partial class Rent_BookSearch
     {
         /// <summary>
         /// Required designer variable.

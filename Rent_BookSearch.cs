@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class Rent_BookSearch : Form
     {
-        public Panel p1, p2;
-        public Form1()
+        public Rent_BookSearch()
         {
             InitializeComponent();
-            p1 = panel1;
-            p2 = panel2;
-
         }
-
     }
 }

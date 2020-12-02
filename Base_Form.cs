@@ -12,6 +12,7 @@ namespace LibraryManagementSystem
 {
     public partial class Base_Form : Form
     {
+        
         public Base_Form()
         {
             InitializeComponent();
@@ -115,6 +116,16 @@ namespace LibraryManagementSystem
         {
             SignPrint signPrint = new SignPrint();
             signPrint.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            comboBox1.DroppedDown = true;
+        }
+
+        private void comboBox1_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox1.DroppedDown = true;
         }
     }
 }

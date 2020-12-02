@@ -87,6 +87,11 @@ namespace LibraryManagementSystem
             this.panel1_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,10 +111,11 @@ namespace LibraryManagementSystem
             this.panel1_2.Controls.Add(this.groupBox2);
             this.panel1_2.Controls.Add(this.groupBox1);
             this.panel1_2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1_2.Location = new System.Drawing.Point(580, 10);
+            this.panel1_2.Location = new System.Drawing.Point(665, 12);
+            this.panel1_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1_2.Name = "panel1_2";
-            this.panel1_2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1_2.Size = new System.Drawing.Size(540, 609);
+            this.panel1_2.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.panel1_2.Size = new System.Drawing.Size(617, 773);
             this.panel1_2.TabIndex = 1;
             // 
             // groupBox2
@@ -140,27 +146,31 @@ namespace LibraryManagementSystem
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Location = new System.Drawing.Point(10, 215);
+            this.groupBox2.Location = new System.Drawing.Point(11, 268);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(520, 235);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(595, 294);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "대출자료정보";
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(384, 206);
+            this.button16.Location = new System.Drawing.Point(439, 258);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(111, 23);
+            this.button16.Size = new System.Drawing.Size(127, 29);
             this.button16.TabIndex = 24;
             this.button16.Text = "예약";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(209, 206);
+            this.button15.Location = new System.Drawing.Point(239, 258);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(100, 23);
+            this.button15.Size = new System.Drawing.Size(114, 29);
             this.button15.TabIndex = 23;
             this.button15.Text = "도서검색";
             this.button15.UseVisualStyleBackColor = true;
@@ -168,186 +178,198 @@ namespace LibraryManagementSystem
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(21, 206);
+            this.button14.Location = new System.Drawing.Point(24, 258);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(108, 23);
+            this.button14.Size = new System.Drawing.Size(123, 29);
             this.button14.TabIndex = 22;
             this.button14.Text = "예약취소";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(315, 161);
+            this.textBox18.Location = new System.Drawing.Point(360, 201);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(180, 21);
+            this.textBox18.Size = new System.Drawing.Size(205, 25);
             this.textBox18.TabIndex = 21;
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(72, 161);
+            this.textBox17.Location = new System.Drawing.Point(82, 201);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(178, 21);
+            this.textBox17.Size = new System.Drawing.Size(203, 25);
             this.textBox17.TabIndex = 20;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(226, 131);
+            this.textBox16.Location = new System.Drawing.Point(258, 164);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 21);
+            this.textBox16.Size = new System.Drawing.Size(114, 25);
             this.textBox16.TabIndex = 19;
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(61, 131);
+            this.textBox15.Location = new System.Drawing.Point(70, 164);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 21);
+            this.textBox15.Size = new System.Drawing.Size(114, 25);
             this.textBox15.TabIndex = 18;
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(391, 101);
+            this.textBox14.Location = new System.Drawing.Point(447, 126);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(104, 21);
+            this.textBox14.Size = new System.Drawing.Size(118, 25);
             this.textBox14.TabIndex = 17;
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(226, 101);
+            this.textBox13.Location = new System.Drawing.Point(258, 126);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 21);
+            this.textBox13.Size = new System.Drawing.Size(114, 25);
             this.textBox13.TabIndex = 16;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(50, 101);
+            this.textBox12.Location = new System.Drawing.Point(57, 126);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(111, 21);
+            this.textBox12.Size = new System.Drawing.Size(126, 25);
             this.textBox12.TabIndex = 15;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(50, 67);
+            this.textBox11.Location = new System.Drawing.Point(57, 84);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(445, 21);
+            this.textBox11.Size = new System.Drawing.Size(508, 25);
             this.textBox11.TabIndex = 14;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(403, 34);
+            this.textBox10.Location = new System.Drawing.Point(461, 42);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(92, 21);
+            this.textBox10.Size = new System.Drawing.Size(105, 25);
             this.textBox10.TabIndex = 13;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(226, 34);
+            this.textBox9.Location = new System.Drawing.Point(258, 42);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
+            this.textBox9.Size = new System.Drawing.Size(114, 25);
             this.textBox9.TabIndex = 12;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(72, 34);
+            this.textBox8.Location = new System.Drawing.Point(82, 42);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
+            this.textBox8.Size = new System.Drawing.Size(114, 25);
             this.textBox8.TabIndex = 11;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 70);
+            this.label12.Location = new System.Drawing.Point(15, 88);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 12);
+            this.label12.Size = new System.Drawing.Size(37, 15);
             this.label12.TabIndex = 3;
             this.label12.Text = "서명";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(256, 164);
+            this.label19.Location = new System.Drawing.Point(293, 205);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 12);
+            this.label19.Size = new System.Drawing.Size(67, 15);
             this.label19.TabIndex = 10;
             this.label19.Text = "청구기호";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 164);
+            this.label18.Location = new System.Drawing.Point(15, 205);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 12);
+            this.label18.Size = new System.Drawing.Size(67, 15);
             this.label18.TabIndex = 9;
             this.label18.Text = "딸림자료";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(167, 134);
+            this.label17.Location = new System.Drawing.Point(191, 168);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 12);
+            this.label17.Size = new System.Drawing.Size(67, 15);
             this.label17.TabIndex = 8;
             this.label17.Text = "도서분류";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 134);
+            this.label16.Location = new System.Drawing.Point(15, 168);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 12);
+            this.label16.Size = new System.Drawing.Size(52, 15);
             this.label16.TabIndex = 7;
             this.label16.Text = "출판사";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(332, 104);
+            this.label15.Location = new System.Drawing.Point(379, 130);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 12);
+            this.label15.Size = new System.Drawing.Size(67, 15);
             this.label15.TabIndex = 6;
             this.label15.Text = "대출상태";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(167, 104);
+            this.label14.Location = new System.Drawing.Point(191, 130);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 12);
+            this.label14.Size = new System.Drawing.Size(67, 15);
             this.label14.TabIndex = 5;
             this.label14.Text = "소장위치";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 104);
+            this.label13.Location = new System.Drawing.Point(15, 130);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 12);
+            this.label13.Size = new System.Drawing.Size(37, 15);
             this.label13.TabIndex = 4;
             this.label13.Text = "저자";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(332, 37);
+            this.label11.Location = new System.Drawing.Point(379, 46);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 12);
+            this.label11.Size = new System.Drawing.Size(82, 15);
             this.label11.TabIndex = 2;
             this.label11.Text = "반납예정일";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(179, 37);
+            this.label10.Location = new System.Drawing.Point(205, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
+            this.label10.Size = new System.Drawing.Size(52, 15);
             this.label10.TabIndex = 1;
             this.label10.Text = "대출일";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 37);
+            this.label9.Location = new System.Drawing.Point(15, 46);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 12);
+            this.label9.Size = new System.Drawing.Size(67, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "등록번호";
             // 
@@ -371,19 +393,21 @@ namespace LibraryManagementSystem
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(10, 10);
+            this.groupBox1.Location = new System.Drawing.Point(11, 12);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.groupBox1.Size = new System.Drawing.Size(520, 205);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(11, 4, 11, 4);
+            this.groupBox1.Size = new System.Drawing.Size(595, 256);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "회원정보";
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(420, 176);
+            this.button13.Location = new System.Drawing.Point(480, 220);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.Size = new System.Drawing.Size(86, 29);
             this.button13.TabIndex = 16;
             this.button13.Text = "회원검색";
             this.button13.UseVisualStyleBackColor = true;
@@ -391,136 +415,144 @@ namespace LibraryManagementSystem
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(50, 118);
+            this.richTextBox1.Location = new System.Drawing.Point(57, 148);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(335, 81);
+            this.richTextBox1.Size = new System.Drawing.Size(382, 100);
             this.richTextBox1.TabIndex = 15;
             this.richTextBox1.Text = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 127);
+            this.label8.Location = new System.Drawing.Point(15, 159);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 12);
+            this.label8.Size = new System.Drawing.Size(37, 15);
             this.label8.TabIndex = 14;
             this.label8.Text = "메모";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 94);
+            this.label7.Location = new System.Drawing.Point(15, 118);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.Size = new System.Drawing.Size(37, 15);
             this.label7.TabIndex = 13;
             this.label7.Text = "주소";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(50, 91);
+            this.textBox7.Location = new System.Drawing.Point(57, 114);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(445, 21);
+            this.textBox7.Size = new System.Drawing.Size(508, 25);
             this.textBox7.TabIndex = 12;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(391, 56);
+            this.textBox6.Location = new System.Drawing.Point(447, 70);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(104, 21);
+            this.textBox6.Size = new System.Drawing.Size(118, 25);
             this.textBox6.TabIndex = 11;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(238, 56);
+            this.textBox5.Location = new System.Drawing.Point(272, 70);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(88, 21);
+            this.textBox5.Size = new System.Drawing.Size(100, 25);
             this.textBox5.TabIndex = 10;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(102, 56);
+            this.textBox4.Location = new System.Drawing.Point(117, 70);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(70, 21);
+            this.textBox4.Size = new System.Drawing.Size(79, 25);
             this.textBox4.TabIndex = 9;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(391, 24);
+            this.textBox3.Location = new System.Drawing.Point(447, 30);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(104, 21);
+            this.textBox3.Size = new System.Drawing.Size(118, 25);
             this.textBox3.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(332, 59);
+            this.label6.Location = new System.Drawing.Point(379, 74);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 7;
             this.label6.Text = "회원상태";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 59);
+            this.label5.Location = new System.Drawing.Point(205, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.Size = new System.Drawing.Size(67, 15);
             this.label5.TabIndex = 6;
             this.label5.Text = "회원등급";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 59);
+            this.label4.Location = new System.Drawing.Point(15, 74);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 12);
+            this.label4.Size = new System.Drawing.Size(103, 15);
             this.label4.TabIndex = 5;
             this.label4.Text = "대출/가능권수";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(332, 27);
+            this.label3.Location = new System.Drawing.Point(379, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "전화번호";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(179, 27);
+            this.label2.Location = new System.Drawing.Point(205, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "회원명";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(226, 24);
+            this.textBox2.Location = new System.Drawing.Point(258, 30);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
+            this.textBox2.Size = new System.Drawing.Size(114, 25);
             this.textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 24);
+            this.textBox1.Location = new System.Drawing.Point(82, 30);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(114, 25);
             this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 27);
+            this.label1.Location = new System.Drawing.Point(15, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "회원번호";
             // 
@@ -531,50 +563,55 @@ namespace LibraryManagementSystem
             this.panel1_1.Controls.Add(this.dataGridView2);
             this.panel1_1.Controls.Add(this.dataGridView1);
             this.panel1_1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1_1.Location = new System.Drawing.Point(10, 10);
+            this.panel1_1.Location = new System.Drawing.Point(11, 12);
+            this.panel1_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1_1.Name = "panel1_1";
-            this.panel1_1.Size = new System.Drawing.Size(540, 609);
+            this.panel1_1.Size = new System.Drawing.Size(617, 773);
             this.panel1_1.TabIndex = 0;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(13, 257);
+            this.label21.Location = new System.Drawing.Point(15, 321);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(53, 12);
+            this.label21.Size = new System.Drawing.Size(67, 15);
             this.label21.TabIndex = 3;
             this.label21.Text = "도서목록";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 10);
+            this.label20.Location = new System.Drawing.Point(13, 12);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 12);
+            this.label20.Size = new System.Drawing.Size(67, 15);
             this.label20.TabIndex = 2;
             this.label20.Text = "회원목록";
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(13, 282);
+            this.dataGridView2.Location = new System.Drawing.Point(15, 352);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(509, 297);
+            this.dataGridView2.Size = new System.Drawing.Size(582, 371);
             this.dataGridView2.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 62);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(509, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(582, 231);
             this.dataGridView1.TabIndex = 0;
             // 
             // UserControl3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "UserControl3";
@@ -589,6 +626,13 @@ namespace LibraryManagementSystem
             this.panel1_1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

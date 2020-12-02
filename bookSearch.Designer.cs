@@ -331,6 +331,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.sectionSearch);
             this.Controls.Add(this.commonSearch);
             this.Name = "BookSearch";
+            this.Text = "도서 불러오기";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

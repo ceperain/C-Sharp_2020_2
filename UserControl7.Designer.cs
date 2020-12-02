@@ -157,6 +157,7 @@ namespace LibraryManagementSystem
             // 
             // button6
             // 
+            this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button6.Location = new System.Drawing.Point(567, 61);
             this.button6.Name = "button6";
@@ -167,6 +168,7 @@ namespace LibraryManagementSystem
             // 
             // button7
             // 
+            this.button7.Enabled = false;
             this.button7.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button7.Location = new System.Drawing.Point(672, 61);
             this.button7.Name = "button7";
@@ -472,6 +474,7 @@ namespace LibraryManagementSystem
             // 
             // button13
             // 
+            this.button13.Enabled = false;
             this.button13.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button13.Location = new System.Drawing.Point(520, 348);
             this.button13.Name = "button13";
@@ -501,6 +504,7 @@ namespace LibraryManagementSystem
             // 
             // button12
             // 
+            this.button12.Enabled = false;
             this.button12.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button12.Location = new System.Drawing.Point(301, 349);
             this.button12.Name = "button12";

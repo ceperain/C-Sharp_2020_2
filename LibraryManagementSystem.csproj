@@ -138,6 +138,42 @@
     <Compile Include="Rent_BookSearch.Designer.cs">
       <DependentUpon>Rent_BookSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignChange1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange1.Designer.cs">
+      <DependentUpon>SignChange1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange2.Designer.cs">
+      <DependentUpon>SignChange2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange3.Designer.cs">
+      <DependentUpon>SignChange3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange4.Designer.cs">
+      <DependentUpon>SignChange4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange5.Designer.cs">
+      <DependentUpon>SignChange5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange6.Designer.cs">
+      <DependentUpon>SignChange6.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignPrint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +284,24 @@
     </Compile>
     <EmbeddedResource Include="Rent_BookSearch.resx">
       <DependentUpon>Rent_BookSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange1.resx">
+      <DependentUpon>SignChange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange2.resx">
+      <DependentUpon>SignChange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange3.resx">
+      <DependentUpon>SignChange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange4.resx">
+      <DependentUpon>SignChange4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange5.resx">
+      <DependentUpon>SignChange5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange6.resx">
+      <DependentUpon>SignChange6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignPrint.resx">
       <DependentUpon>SignPrint.cs</DependentUpon>

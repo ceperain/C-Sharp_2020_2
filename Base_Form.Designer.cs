@@ -42,6 +42,7 @@ namespace LibraryManagementSystem
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -66,11 +67,6 @@ namespace LibraryManagementSystem
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -239,6 +235,27 @@ namespace LibraryManagementSystem
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownWidth = 120;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "별치기호 일괄수정",
+            "저자기호 일괄수정",
+            "분류기호 일괄수정",
+            "소장위치 일괄수정",
+            "반입구분 일괄수정",
+            "도서상태 일괄수정"});
+            this.comboBox1.Location = new System.Drawing.Point(494, 45);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(0, 20);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
+            // 
             // button13
             // 
             this.button13.AutoSize = true;
@@ -256,7 +273,7 @@ namespace LibraryManagementSystem
             // 
             this.button14.AutoSize = true;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(529, 0);
+            this.button14.Location = new System.Drawing.Point(569, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 60);
@@ -269,7 +286,7 @@ namespace LibraryManagementSystem
             // 
             this.button15.AutoSize = true;
             this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.Location = new System.Drawing.Point(604, 0);
+            this.button15.Location = new System.Drawing.Point(644, 0);
             this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 60);
@@ -282,7 +299,7 @@ namespace LibraryManagementSystem
             // 
             this.button16.AutoSize = true;
             this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.Location = new System.Drawing.Point(679, 0);
+            this.button16.Location = new System.Drawing.Point(719, 0);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(87, 60);
@@ -301,7 +318,6 @@ namespace LibraryManagementSystem
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "대출/반납";
             this.tabPage1.UseVisualStyleBackColor = true;
-            
             // 
             // panel1
             // 
@@ -735,25 +751,6 @@ namespace LibraryManagementSystem
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "게시판";
             this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.DropDownWidth = 100;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1234",
-            "2345",
-            "3456",
-            "4567"});
-            this.comboBox1.Location = new System.Drawing.Point(454, 40);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 20);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
             // 
             // Base_Form
             // 

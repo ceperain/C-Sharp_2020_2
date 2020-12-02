@@ -166,7 +166,6 @@
     <EmbeddedResource Include="Check_Form.resx">
       <DependentUpon>Check_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx" />
     <EmbeddedResource Include="Id_Redundant_Form.resx">
       <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
     </EmbeddedResource>

@@ -57,10 +57,6 @@ namespace LibraryManagementSystem
             this.button6 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -268,6 +264,7 @@ namespace LibraryManagementSystem
             this.button15.TabIndex = 18;
             this.button15.Text = "바코드출력";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -291,7 +288,7 @@ namespace LibraryManagementSystem
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "대출/반납";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            
             // 
             // panel1
             // 

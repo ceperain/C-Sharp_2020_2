@@ -168,7 +168,6 @@
     <Compile Include="UserControl3.Designer.cs">
       <DependentUpon>UserControl3.cs</DependentUpon>
     </Compile>
-    
     <Compile Include="UserControl4.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -222,6 +221,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ISBN_Redundant_Form.resx">
       <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassUser.resx">
       <DependentUpon>ClassUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberSearchForm.resx">
       <DependentUpon>MemberSearchForm.cs</DependentUpon>
@@ -267,7 +264,6 @@
     <EmbeddedResource Include="UserControl3.resx">
       <DependentUpon>UserControl3.cs</DependentUpon>
     </EmbeddedResource>
-    
     <EmbeddedResource Include="UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </EmbeddedResource>

@@ -45,9 +45,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 17);
+            this.label1.Location = new System.Drawing.Point(11, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "검색구분";
             // 
@@ -62,44 +62,43 @@
             "주소",
             "전화번호",
             "이메일"});
-            this.comboBox1.Location = new System.Drawing.Point(72, 14);
+            this.comboBox1.Location = new System.Drawing.Point(70, 10);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 23);
+            this.comboBox1.Size = new System.Drawing.Size(124, 20);
             this.comboBox1.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 14);
+            this.textBox1.Location = new System.Drawing.Point(200, 10);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(332, 25);
+            this.textBox1.Size = new System.Drawing.Size(291, 21);
             this.textBox1.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(568, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(497, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "검색";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(16, 68);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(14, 54);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 29);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "전체선택";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(568, 69);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(497, 55);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 29);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "불러오기";
             this.button3.UseVisualStyleBackColor = true;
@@ -112,14 +111,12 @@
             this.Column8,
             this.Column12,
             this.Column13});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 86);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(638, 581);
+            this.dataGridView1.Size = new System.Drawing.Size(558, 465);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -129,83 +126,19 @@
             this.Column1.ReadOnly = true;
             this.Column1.Width = 125;
             // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "회원번호";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "회원명";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "회원등급";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "회원상태";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "전화번호";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "주소";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
-            // 
             // Column8
             // 
             this.Column8.HeaderText = "이메일";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "대출기간";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
             this.Column8.ReadOnly = true;
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "최대대출권수";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "최대예약권수";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
+            this.Column8.Width = 125;
             // 
             // Column12
             // 
             this.Column12.HeaderText = "대출정지일";
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
-            // 
             this.Column12.ReadOnly = true;
             // 
             // Column13
@@ -213,14 +146,13 @@
             this.Column13.HeaderText = "등록일";
             this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
-            // 
             this.Column13.ReadOnly = true;
             // 
             // MemberSearchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 701);
+            this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -228,7 +160,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemberSearchForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

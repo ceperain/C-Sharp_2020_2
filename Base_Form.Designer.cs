@@ -46,9 +46,19 @@ namespace LibraryManagementSystem
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -446,7 +456,6 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Controls.Add(this.button14);
             this.flowLayoutPanel2.Controls.Add(this.button15);
             this.flowLayoutPanel2.Controls.Add(this.button16);
-            this.flowLayoutPanel2.Controls.Add(this.userControl41);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 4);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -745,14 +754,6 @@ namespace LibraryManagementSystem
             this.comboBox1.Size = new System.Drawing.Size(0, 20);
             this.comboBox1.TabIndex = 20;
             this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
-            // 
-            // userControl41
-            //
-            this.userControl41.Location = new System.Drawing.Point(3, 80);
-            this.userControl41.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1291, 786);
-            this.userControl41.TabIndex = 20;
             // 
             // Base_Form
             // 

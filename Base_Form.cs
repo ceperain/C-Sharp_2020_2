@@ -33,6 +33,13 @@ namespace LibraryManagementSystem
             panel1.Controls.Add(userControl2);
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl = new UserControl3();
+            panel1.Controls.Add(userControl);
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
@@ -47,12 +54,7 @@ namespace LibraryManagementSystem
             panel2.Controls.Add(userControl);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            panel1.Controls.Clear();
-            UserControl3 userControl = new UserControl3();
-            panel1.Controls.Add(userControl);
-        }
+        
         private void button8_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
@@ -95,17 +97,19 @@ namespace LibraryManagementSystem
             bookSearchForm.Show();
         }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            BookInformation bookInformation = new BookInformation();
+            bookInformation.Show();
+        }
+
         private void button15_Click(object sender, EventArgs e)
         {
             BarcodePrint barcodePrint = new BarcodePrint();
             barcodePrint.Show();
         }
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-            BookInformation bookInformation = new BookInformation();
-            bookInformation.Show();
-        }
+        
 
         private void button16_Click(object sender, EventArgs e)
         {

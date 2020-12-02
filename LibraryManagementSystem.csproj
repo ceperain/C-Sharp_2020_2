@@ -65,6 +65,8 @@
       <DependentUpon>BookInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="BookLoad_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Books.cs" />
     <Compile Include="Rent_BookSearch.cs">
       <SubType>Form</SubType>
@@ -85,7 +87,7 @@
     <Compile Include="BookSearch.Designer.cs">
       <DependentUpon>BookSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Check_Form.cs">
+    <Compile Include="Check_Form.cs" />
     <Compile Include="MemberSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,20 +180,11 @@
     <EmbeddedResource Include="MemberSearchForm.resx">
       <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MemberSearchForm.resx">
-      <DependentUpon>MemberSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MemberSearchForm.resx">
-      <DependentUpon>MemberSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Id_Redundant_Form.resx">
       <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ISBN_Redundant_Form.resx">
       <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MemberSearchForm.resx">
-      <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

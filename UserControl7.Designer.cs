@@ -657,6 +657,7 @@ namespace LibraryManagementSystem
             this.txtPublishDate.Name = "txtPublishDate";
             this.txtPublishDate.Size = new System.Drawing.Size(62, 29);
             this.txtPublishDate.TabIndex = 28;
+            this.txtPublishDate.TextChanged += new System.EventHandler(this.txtPublishDate_TextChanged);
             // 
             // label8
             // 
@@ -797,6 +798,7 @@ namespace LibraryManagementSystem
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 52);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(492, 552);
             this.dataGridView1.TabIndex = 1;

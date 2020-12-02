@@ -100,7 +100,6 @@ namespace LibraryManagementSystem
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(1130, 629);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel1_2
             // 
@@ -165,6 +164,7 @@ namespace LibraryManagementSystem
             this.button15.TabIndex = 23;
             this.button15.Text = "도서검색";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 

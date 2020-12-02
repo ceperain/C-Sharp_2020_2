@@ -32,6 +32,8 @@ namespace LibraryManagementSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1_2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -80,8 +82,6 @@ namespace LibraryManagementSystem
             this.label20 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel1_2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -151,6 +151,24 @@ namespace LibraryManagementSystem
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "대출자료정보";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(209, 253);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 23);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "딸림자료 반납관리";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(21, 253);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "반납예정도서 조회";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button16
             // 
             this.button16.Location = new System.Drawing.Point(384, 206);
@@ -168,6 +186,7 @@ namespace LibraryManagementSystem
             this.button15.TabIndex = 23;
             this.button15.Text = "도서검색";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -574,24 +593,6 @@ namespace LibraryManagementSystem
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(509, 185);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(21, 253);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "반납예정도서 조회";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(209, 253);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 23);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "딸림자료 반납관리";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // UserControl2
             // 

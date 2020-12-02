@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class BookInformation : Form
     {
-        public Panel p1, p2;
-        public Form1()
+        public BookInformation()
         {
             InitializeComponent();
-            p1 = panel1;
-            p2 = panel2;
-
         }
 
+       
     }
 }

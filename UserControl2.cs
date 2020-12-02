@@ -21,5 +21,11 @@ namespace LibraryManagementSystem
         {
             MemberSearch.PopUp();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            Rent_BookSearch rent_bookSearch = new Rent_BookSearch();
+            rent_bookSearch.ShowDialog();
+        }
     }
 }

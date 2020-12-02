@@ -145,6 +145,7 @@
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -166,37 +167,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarcodePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarcodePrint.Designer.cs">
+      <DependentUpon>BarcodePrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Base_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Base_Form.Designer.cs">
       <DependentUpon>Base_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInformation.Designer.cs">
+      <DependentUpon>BookInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookLoad_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookLoad_Form.Designer.cs">
       <DependentUpon>BookLoad_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Book.cs" />
-    <Compile Include="Check_Form.cs">
+    <Compile Include="ClassUser.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUser.Designer.cs">
+      <DependentUpon>ClassUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManager.cs" />
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookSearch.Designer.cs">
+      <DependentUpon>BookSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Check_Form.Designer.cs">
       <DependentUpon>Check_Form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BookManager.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MemberSearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MemberSearchForm.Designer.cs">
-      <DependentUpon>MemberSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Id_Redundant_Form.cs">
       <SubType>Form</SubType>
@@ -212,8 +237,74 @@
     </Compile>
     <Compile Include="Member.cs" />
     <Compile Include="MemberSearch.cs" />
+    <Compile Include="MemberSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSearchForm.Designer.cs">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rent_BookSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent_BookSearch.Designer.cs">
+      <DependentUpon>Rent_BookSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange1.Designer.cs">
+      <DependentUpon>SignChange1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange2.Designer.cs">
+      <DependentUpon>SignChange2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange3.Designer.cs">
+      <DependentUpon>SignChange3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange4.Designer.cs">
+      <DependentUpon>SignChange4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange5.Designer.cs">
+      <DependentUpon>SignChange5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignChange6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignChange6.Designer.cs">
+      <DependentUpon>SignChange6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignPrint.Designer.cs">
+      <DependentUpon>SignPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchUser.Designer.cs">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -238,14 +329,41 @@
     <Compile Include="UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl6.Designer.cs">
+      <DependentUpon>UserControl6.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl7.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl7.Designer.cs">
       <DependentUpon>UserControl7.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarcodePrint.resx">
+      <DependentUpon>BarcodePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="UserPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPrint.Designer.cs">
+      <DependentUpon>UserPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows.Designer.cs">
+      <DependentUpon>Windows.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base_Form.resx">
       <DependentUpon>Base_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInformation.resx">
+      <DependentUpon>BookInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookSearch.resx">
+      <DependentUpon>BookSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookLoad_Form.resx">
       <DependentUpon>BookLoad_Form.cs</DependentUpon>
@@ -253,17 +371,26 @@
     <EmbeddedResource Include="Check_Form.resx">
       <DependentUpon>Check_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MemberSearchForm.resx">
-      <DependentUpon>MemberSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Id_Redundant_Form.resx">
       <DependentUpon>Id_Redundant_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ISBN_Redundant_Form.resx">
       <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassUser.resx">
+      <DependentUpon>ClassUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSearchForm.resx">
+      <DependentUpon>MemberSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -274,6 +401,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rent_BookSearch.resx">
+      <DependentUpon>Rent_BookSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange1.resx">
+      <DependentUpon>SignChange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange2.resx">
+      <DependentUpon>SignChange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange3.resx">
+      <DependentUpon>SignChange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange4.resx">
+      <DependentUpon>SignChange4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange5.resx">
+      <DependentUpon>SignChange5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignChange6.resx">
+      <DependentUpon>SignChange6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignPrint.resx">
+      <DependentUpon>SignPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUser.resx">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,8 +440,17 @@
     <EmbeddedResource Include="UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl6.resx">
+      <DependentUpon>UserControl6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl7.resx">
       <DependentUpon>UserControl7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPrint.resx">
+      <DependentUpon>UserPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows.resx">
+      <DependentUpon>Windows.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

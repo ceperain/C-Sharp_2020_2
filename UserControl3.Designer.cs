@@ -97,7 +97,7 @@ namespace LibraryManagementSystem
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(10);
+            this.panel1.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.panel1.Size = new System.Drawing.Size(1130, 629);
             this.panel1.TabIndex = 3;
             // 
@@ -106,10 +106,10 @@ namespace LibraryManagementSystem
             this.panel1_2.Controls.Add(this.groupBox2);
             this.panel1_2.Controls.Add(this.groupBox1);
             this.panel1_2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1_2.Location = new System.Drawing.Point(580, 10);
+            this.panel1_2.Location = new System.Drawing.Point(581, 8);
             this.panel1_2.Name = "panel1_2";
-            this.panel1_2.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1_2.Size = new System.Drawing.Size(540, 609);
+            this.panel1_2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel1_2.Size = new System.Drawing.Size(540, 613);
             this.panel1_2.TabIndex = 1;
             // 
             // groupBox2
@@ -164,6 +164,7 @@ namespace LibraryManagementSystem
             this.button15.TabIndex = 23;
             this.button15.Text = "도서검색";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -530,9 +531,9 @@ namespace LibraryManagementSystem
             this.panel1_1.Controls.Add(this.dataGridView2);
             this.panel1_1.Controls.Add(this.dataGridView1);
             this.panel1_1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1_1.Location = new System.Drawing.Point(10, 10);
+            this.panel1_1.Location = new System.Drawing.Point(9, 8);
             this.panel1_1.Name = "panel1_1";
-            this.panel1_1.Size = new System.Drawing.Size(540, 609);
+            this.panel1_1.Size = new System.Drawing.Size(540, 613);
             this.panel1_1.TabIndex = 0;
             // 
             // label21
@@ -558,6 +559,7 @@ namespace LibraryManagementSystem
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(13, 282);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.Size = new System.Drawing.Size(509, 297);
             this.dataGridView2.TabIndex = 1;
@@ -567,6 +569,7 @@ namespace LibraryManagementSystem
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 50);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(509, 185);
             this.dataGridView1.TabIndex = 0;
@@ -576,6 +579,7 @@ namespace LibraryManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControl3";
             this.Size = new System.Drawing.Size(1130, 629);
             this.panel1.ResumeLayout(false);

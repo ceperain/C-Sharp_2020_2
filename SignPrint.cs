@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Check_Form : Form
+    public partial class SignPrint : Form
     {
-        public Check_Form()
+        public SignPrint()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SignPrint_Load(object sender, EventArgs e)
         {
 
         }

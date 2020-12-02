@@ -180,5 +180,9 @@ namespace LibraryManagementSystem
             txtFullName.Text = row.Cells[18].Value.ToString();
         }
 
+        private void txtPublishDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

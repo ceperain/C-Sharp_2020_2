@@ -74,11 +74,6 @@ namespace LibraryManagementSystem
 
         private void button9_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            UserControl7 userControl = new UserControl7();
-            panel2.Controls.Add(userControl);
-            ISBN_Redundant_Form form = new ISBN_Redundant_Form();
-            form.ShowDialog();
             BookManager.Save();
         }
 
@@ -102,38 +97,51 @@ namespace LibraryManagementSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
             BookSearch bookSearchForm = new BookSearch();
             bookSearchForm.Show();
         }
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-            BookInformation bookInformation = new BookInformation();
-            bookInformation.Show();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            BarcodePrint barcodePrint = new BarcodePrint();
-            barcodePrint.Show();
-        }
-
-        
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            SignPrint signPrint = new SignPrint();
-            signPrint.Show();
-        }
-
         private void button13_Click(object sender, EventArgs e)
         {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
             comboBox1.DroppedDown = true;
         }
 
         private void comboBox1_MouseEnter(object sender, EventArgs e)
         {
             comboBox1.DroppedDown = true;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            BookInformation bookInformation = new BookInformation();
+            bookInformation.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            BarcodePrint barcodePrint = new BarcodePrint();
+            barcodePrint.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            UserControl7 userControl = new UserControl7();
+            panel2.Controls.Add(userControl);
+            SignPrint signPrint = new SignPrint();
+            signPrint.Show();
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -285,5 +293,6 @@ namespace LibraryManagementSystem
                 signChange6.Location = new Point(mainFormx + (mainformwidth / 2) - (childformwidth6 / 2), mainFormy + (mainformheight / 2) - (childformheight6 - 2));
             }
         }
+
     }
 }

@@ -29,9 +29,7 @@ namespace LibraryManagementSystem
         {
             panel1.Controls.Clear();
             UserControl1 userControl1 = new UserControl1();
-            panel1.Controls.Add(userControl1);
-            
-            
+            panel1.Controls.Add(userControl1);   
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -74,7 +72,7 @@ namespace LibraryManagementSystem
 
         private void button9_Click(object sender, EventArgs e)
         {
-            BookManager.Save();
+            
         }
 
         private void button10_Click(object sender, EventArgs e)

@@ -23,12 +23,10 @@ namespace LibraryManagementSystem
             {
                 string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
-                MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-                myDataAdapter.SelectCommand = new MySqlCommand("select * database.edata;", myConn);
-                MySqlCommandBuilder cb = new MySqlCommandBuilder(myDataAdapter);
                 myConn.Open();
-                DataSet ds = new DataSet();
-                MessageBox.Show("연결됐습니다.");
+                MySqlCommand cmd = new MySqlCommand("select * form bookmanagement.books;", myConn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("데이터를 불러왔습니다!!!!");
                 myConn.Close();
             }
             catch (Exception)
@@ -64,8 +62,8 @@ namespace LibraryManagementSystem
                     string bs3 = item.BookSize;
                     string bp3 = item.BookPrice;
                     string bfn = item.BookFullName;
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO bookmanagement.books VALUES('" + num + "', '" + brn + "', '" + bs + "', '" + bn + "', '" + ba + "', '" + bp + "', '" + 
-                        bsi + "', '" + bai + "', '" + bc + "', '" + bc2 + "', '" + bs2 + "', " + bisbn + "', '" + bl + "', '" + bi + "', '" + bpd + "', '" + bp2 + "', '" +
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO bookmanagement.books VALUES(" + num + ", " + brn + ", '" + bs + "', '" + bn + "', '" + ba + "', '" + bp + "', '" + 
+                        bsi + "', " + bai + ", '" + bc + "', '" + bc2 + "', '" + bs2 + "', " + bisbn + ", '" + bl + "', '" + bi + "', '" + bpd + "', '" + bp2 + "', '" +
                         bs3 + "', '" + bp3 + "', '" + bfn + "')", myConn);
                     cmd.ExecuteNonQuery();
                 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LibraryManagementSystem
 {
@@ -16,6 +17,7 @@ namespace LibraryManagementSystem
         public int variable = 1;
         DataTable table = new DataTable();
         int selectedRow;
+        string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
 
         public UserControl7()
         {
@@ -49,7 +51,11 @@ namespace LibraryManagementSystem
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "")
+            if (txtISBN.Text == "")
+            {
+                MessageBox.Show("ISBN을 입력해주세요!!!!", "필수항목 누락");
+            }
+            else if (txtName.Text == "")
             {
                 MessageBox.Show("도서명을 입력해주세요!!!!", "필수항목 누락");
             }
@@ -98,6 +104,15 @@ namespace LibraryManagementSystem
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = BookManager.Books;
+
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+                myConn.Open();
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO bookmanagement.books VALUES(" + book.Num + ", " + book.BookRegisterNumber + ", '" + book.BookState + "', '" + book.BookName + "', '" + book.BookAuthor + "', '" + book.BookPublish + "', " +
+                        book.BookSortId + ", '" + book.BookAuthorId + "', '" + book.BookCharge + "', '" + book.BookCopy + "', '" + book.BookSeperate + "', " + book.BookISBN + ", '" + book.BookLocation + "', '" + book.BookImport + "', '" + 
+                        book.BookPublishDate + "', '" + book.BookPage + "', '" + book.BookSize + "', '" + book.BookPrice + "', '" + book.BookFullName + "')", myConn);
+                cmd.ExecuteNonQuery();
+                myConn.Close();
+
                 MessageBox.Show("도서를 저장했습니다!!!!");
             }
            
@@ -143,16 +158,23 @@ namespace LibraryManagementSystem
         {
             try
             {
-                Book book = BookManager.Books.Single((x) => x.BookISBN == long.Parse(txtISBN.Text));
+                Book book = BookManager.Books.Single((x) => x.BookRegisterNumber == int.Parse(txtRegisterNumber.Text));
                 BookManager.Books.Remove(book);
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = BookManager.Books;
+
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+                myConn.Open();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM bookmanagement.books WHERE BookRegisterNumber = " + book.BookRegisterNumber, myConn);
+                cmd.ExecuteNonQuery();
+                myConn.Close();
+
                 MessageBox.Show("도서를 삭제했습니다!!!!");
             }
-            catch (Exception)
+            catch (Exception exception)
             {
-                MessageBox.Show("존재하지 않는 도서입니다!!!!");
+                MessageBox.Show(exception.Message);
             }
         }
 

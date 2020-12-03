@@ -236,6 +236,7 @@
       <DependentUpon>ISBN_Redundant_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Member.cs" />
+    <Compile Include="MemberManager.cs" />
     <Compile Include="MemberSearch.cs" />
     <Compile Include="MemberSearchForm.cs">
       <SubType>Form</SubType>

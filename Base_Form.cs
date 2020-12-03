@@ -120,12 +120,12 @@ namespace LibraryManagementSystem
 
         
 
-        private void button16_Click(object sender, EventArgs e)
+        /*private void button16_Click(object sender, EventArgs e)
         {
             SignPrint signPrint = new SignPrint();
             signPrint.Show();
         }
-
+        */
         private void button13_Click(object sender, EventArgs e)
         {
             comboBox1.DroppedDown = true;
@@ -284,6 +284,12 @@ namespace LibraryManagementSystem
                 signChange6.Show();
                 signChange6.Location = new Point(mainFormx + (mainformwidth / 2) - (childformwidth6 / 2), mainFormy + (mainformheight / 2) - (childformheight6 - 2));
             }
+        }
+
+        private void button16_Click_1(object sender, EventArgs e)
+        {
+            SignPrint signPrint = new SignPrint();
+            signPrint.Show();
         }
     }
 }

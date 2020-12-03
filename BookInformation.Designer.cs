@@ -147,6 +147,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.submitNumber);
             this.Name = "BookInformation";
+            this.Text = "도서 정보";
             this.Load += new System.EventHandler(this.BookInformation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

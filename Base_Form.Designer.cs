@@ -46,13 +46,13 @@ namespace LibraryManagementSystem
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -80,8 +80,8 @@ namespace LibraryManagementSystem
             // 
             this.tabPage6.Location = new System.Drawing.Point(4, 42);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage6.Size = new System.Drawing.Size(993, 547);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1136, 695);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "게시판";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -90,8 +90,8 @@ namespace LibraryManagementSystem
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 42);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage5.Size = new System.Drawing.Size(993, 547);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1136, 695);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "데이터베이스 관리";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -100,8 +100,8 @@ namespace LibraryManagementSystem
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 42);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(993, 547);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1136, 695);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "이용통계";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@ namespace LibraryManagementSystem
             this.tabPage3.Controls.Add(this.flowLayoutPanel3);
             this.tabPage3.Location = new System.Drawing.Point(4, 42);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1136, 695);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "회원관리";
@@ -239,7 +239,7 @@ namespace LibraryManagementSystem
             this.tabPage2.Controls.Add(this.flowLayoutPanel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 42);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1136, 695);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "도서관리";
@@ -256,13 +256,13 @@ namespace LibraryManagementSystem
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flowLayoutPanel2.Controls.Add(this.comboBox1);
             this.flowLayoutPanel2.Controls.Add(this.button7);
             this.flowLayoutPanel2.Controls.Add(this.button8);
             this.flowLayoutPanel2.Controls.Add(this.button9);
             this.flowLayoutPanel2.Controls.Add(this.button10);
             this.flowLayoutPanel2.Controls.Add(this.button11);
             this.flowLayoutPanel2.Controls.Add(this.button12);
+            this.flowLayoutPanel2.Controls.Add(this.comboBox1);
             this.flowLayoutPanel2.Controls.Add(this.button13);
             this.flowLayoutPanel2.Controls.Add(this.button14);
             this.flowLayoutPanel2.Controls.Add(this.button15);
@@ -273,6 +273,27 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1130, 59);
             this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownWidth = 120;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "별치기호 일괄수정",
+            "저자기호 일괄수정",
+            "분류기호 일괄수정",
+            "소장위치 일괄수정",
+            "반입구분 일괄수정",
+            "도서상태 일괄수정"});
+            this.comboBox1.Location = new System.Drawing.Point(457, 40);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(0, 20);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
             // 
             // button7
             // 
@@ -352,27 +373,6 @@ namespace LibraryManagementSystem
             this.button12.Text = "도서검색";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.DropDownWidth = 120;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "별치기호 일괄수정",
-            "저자기호 일괄수정",
-            "분류기호 일괄수정",
-            "소장위치 일괄수정",
-            "반입구분 일괄수정",
-            "도서상태 일괄수정"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 40);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 20);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
             // 
             // button13
             // 

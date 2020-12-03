@@ -287,7 +287,7 @@ namespace LibraryManagementSystem
             "소장위치 일괄수정",
             "반입구분 일괄수정",
             "도서상태 일괄수정"});
-            this.comboBox1.Location = new System.Drawing.Point(457, 40);
+            this.comboBox1.Location = new System.Drawing.Point(0, 40);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(0, 20);
@@ -339,7 +339,7 @@ namespace LibraryManagementSystem
             // 
             this.button10.AutoSize = true;
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.Location = new System.Drawing.Point(225, 0);
+            this.button10.Location = new System.Drawing.Point(229, 0);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 60);
@@ -352,7 +352,7 @@ namespace LibraryManagementSystem
             // 
             this.button11.AutoSize = true;
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.Location = new System.Drawing.Point(300, 0);
+            this.button11.Location = new System.Drawing.Point(304, 0);
             this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(77, 60);
@@ -365,7 +365,7 @@ namespace LibraryManagementSystem
             // 
             this.button12.AutoSize = true;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Location = new System.Drawing.Point(375, 0);
+            this.button12.Location = new System.Drawing.Point(381, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(77, 60);
@@ -378,7 +378,7 @@ namespace LibraryManagementSystem
             // 
             this.button13.AutoSize = true;
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Location = new System.Drawing.Point(450, 0);
+            this.button13.Location = new System.Drawing.Point(458, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(77, 60);
@@ -391,10 +391,10 @@ namespace LibraryManagementSystem
             // 
             this.button14.AutoSize = true;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(525, 0);
+            this.button14.Location = new System.Drawing.Point(535, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(66, 48);
+            this.button14.Size = new System.Drawing.Size(77, 60);
             this.button14.TabIndex = 17;
             this.button14.Text = "도서배가";
             this.button14.UseVisualStyleBackColor = true;
@@ -404,7 +404,7 @@ namespace LibraryManagementSystem
             // 
             this.button15.AutoSize = true;
             this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.Location = new System.Drawing.Point(600, 0);
+            this.button15.Location = new System.Drawing.Point(612, 0);
             this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(92, 60);
@@ -417,7 +417,7 @@ namespace LibraryManagementSystem
             // 
             this.button16.AutoSize = true;
             this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.Location = new System.Drawing.Point(675, 0);
+            this.button16.Location = new System.Drawing.Point(704, 0);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(107, 60);

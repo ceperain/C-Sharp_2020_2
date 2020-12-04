@@ -34,8 +34,9 @@ namespace LibraryManagementSystem
                 
             }
         }
-        public static void Load(string query)
+        public static List<Member> Load(string query)
         {
+            List<Member> selMembers = new List<Member>();
             try
             {
                 string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
@@ -44,13 +45,32 @@ namespace LibraryManagementSystem
                 MySqlCommand cmd = new MySqlCommand(query, myConn);
                 myConn.Open();
 
-                cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while(reader.Read())
+                {
+                    Member tMem = new Member()
+                    {
+                        MemberId = (int)reader["MemberId"],
+                        MemberName = (string)reader["MemberName"],
+                        MemberPhoneNumber = (string)reader["MemberPhoneNumber"],
+                        MemberState = (string)reader["MemberState"],
+                        MemberAdress = (string)reader["MemberAdress"],
+                        MemberMail = (string)reader["MemberMail"],
+                        MemberJoined = reader["MemberJoined"].ToString()
+                    };
+                    selMembers.Add(tMem);
+                }
+                
                 MessageBox.Show("연결됐습니다.");
+                reader.Close();
                 myConn.Close();
-            }
-            catch (Exception)
-            {
+                return selMembers;
 
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
             }
         }
 
@@ -65,7 +85,7 @@ namespace LibraryManagementSystem
                 
                 foreach (var item in Members)
                 {
-                    string date = "" + DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day + "";
+                    string date = DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second;
                     MySqlCommand cmd = new MySqlCommand(
                         "INSERT INTO bookmanagement.members VALUES(" + item.MemberId + ", '" + item.MemberName + "', '" + item.MemberPhoneNumber + "', '" + item.MemberState + "', '" + item.MemberAdress + "', '" + item.MemberMail + "', '" + date + "' );", myConn); ;
                     cmd.ExecuteNonQuery();

@@ -19,15 +19,15 @@ namespace LibraryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = "";
             string selected = "";
-            if(comboBox1.SelectedItem.ToString() != null)
-            {
-                selected = comboBox1.SelectedItem.ToString();
-            }
+            selected = comboBox1.SelectedItem.ToString();
+            Console.WriteLine(selected);
             
             string search = "";
             string keyword = textBox1.Text;
-            switch(selected)
+            
+            switch (selected)
             {
                 case "회원번호":
                     search = "Where MemberId";
@@ -50,7 +50,27 @@ namespace LibraryManagementSystem
                 default:
                     break;
             }
-            MemberManager.Load(MemberSearch.searchQuery(keyword, search));
+            Console.WriteLine("search = " + search);
+
+            DataTable table = new DataTable();
+
+
+            table.Columns.Add("회원번호", typeof(Int32));
+            table.Columns.Add("이름", typeof(string));
+            table.Columns.Add("상태", typeof(string));
+            table.Columns.Add("주소", typeof(string));
+            table.Columns.Add("전화번호", typeof(string));
+            table.Columns.Add("이메일", typeof(string));
+            table.Columns.Add("가입일", typeof(string));
+
+            foreach (var item in MemberManager.Load(MemberSearch.searchQuery(keyword, search)))
+            {
+                table.Rows.Add(item.MemberId, item.MemberName, item.MemberState, item.MemberAdress, item.MemberPhoneNumber, item.MemberMail, item.MemberJoined);
+            }
+            dataGridView1.DataSource = table;
+            
+
+
         }
     }
 }

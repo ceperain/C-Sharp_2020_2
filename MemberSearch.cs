@@ -18,11 +18,12 @@ namespace LibraryManagementSystem
         {
             if(keyword == "")
             {
-                return "select * bookmanagement.members;";
+                return "select * from bookmanagement.members; ";
             }
             else
             {
-                return "select * bookmanagement.members" + search + "=" + keyword + ";";
+                
+                return "select * from bookmanagement.members " + search + "=" + keyword + ";";
             }
             
         }

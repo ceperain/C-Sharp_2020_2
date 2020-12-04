@@ -222,6 +222,7 @@ namespace LibraryManagementSystem
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Silver;
             this.textBox1.Location = new System.Drawing.Point(806, 120);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -230,6 +231,7 @@ namespace LibraryManagementSystem
             // 
             // button11
             // 
+            this.button11.Enabled = false;
             this.button11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button11.Location = new System.Drawing.Point(995, 123);
             this.button11.Name = "button11";
@@ -661,7 +663,6 @@ namespace LibraryManagementSystem
             this.txtPublishDate.Name = "txtPublishDate";
             this.txtPublishDate.Size = new System.Drawing.Size(62, 29);
             this.txtPublishDate.TabIndex = 28;
-            this.txtPublishDate.TextChanged += new System.EventHandler(this.txtPublishDate_TextChanged);
             // 
             // label8
             // 
@@ -895,7 +896,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public  System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label23;

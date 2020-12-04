@@ -17,7 +17,7 @@ namespace LibraryManagementSystem
         public Base_Form()
         {
             InitializeComponent();
-            Text = "도서 대여 프로그램";
+            Text = "도서 대여 프로그램";   
         }
 
         private void Base_Form_Load(object sender, EventArgs e)
@@ -55,7 +55,6 @@ namespace LibraryManagementSystem
 
         private void button7_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
         }
@@ -63,7 +62,6 @@ namespace LibraryManagementSystem
         
         private void button8_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BookLoad_Form form = new BookLoad_Form();
@@ -77,7 +75,6 @@ namespace LibraryManagementSystem
 
         private void button10_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             Id_Redundant_Form form = new Id_Redundant_Form();
@@ -86,7 +83,6 @@ namespace LibraryManagementSystem
 
         private void button11_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             Check_Form form = new Check_Form();
@@ -95,7 +91,6 @@ namespace LibraryManagementSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BookSearch bookSearchForm = new BookSearch();
@@ -104,7 +99,6 @@ namespace LibraryManagementSystem
 
         private void button13_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             comboBox1.DroppedDown = true;
@@ -117,7 +111,6 @@ namespace LibraryManagementSystem
 
         private void button14_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BookInformation bookInformation = new BookInformation();
@@ -126,7 +119,6 @@ namespace LibraryManagementSystem
 
         private void button15_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BarcodePrint barcodePrint = new BarcodePrint();
@@ -135,7 +127,6 @@ namespace LibraryManagementSystem
 
         private void button16_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             SignPrint signPrint = new SignPrint();

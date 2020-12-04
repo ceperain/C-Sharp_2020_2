@@ -22,6 +22,12 @@ namespace LibraryManagementSystem
         public UserControl7()
         {
             InitializeComponent();
+            BookLoad_Form.toform1 += new toForm1(dataLoad);
+        }
+
+        void dataLoad(DataGridView dg)
+        {
+            dataGridView1.DataSource = dg.DataSource;
         }
 
         private void UserControl7_Load(object sender, EventArgs e)
@@ -51,6 +57,7 @@ namespace LibraryManagementSystem
 
         private void button9_Click(object sender, EventArgs e)
         {
+            int isnum = 0;
             if (txtISBN.Text == "")
             {
                 MessageBox.Show("ISBN을 입력해주세요!!!!", "필수항목 누락");
@@ -63,6 +70,10 @@ namespace LibraryManagementSystem
             {
                 MessageBox.Show("저자를 입력해주세요!!!!", "필수항목 누락");
             }
+            else if (txtPublish.Text == "")
+            {
+                MessageBox.Show("출판사를 입력해주세요!!!!", "필수항목 누락");
+            }
             else if (txtSortId.Text == "")
             {
                 MessageBox.Show("분류기호를 입력해주세요!!!!", "필수항목 누락");
@@ -74,6 +85,18 @@ namespace LibraryManagementSystem
             else if (txtRegisterNumber.Text == "")
             {
                 MessageBox.Show("등록번호를 입력해주세요!!!!", "필수항목 누락");
+            }
+            else if (!(int.TryParse(txtISBN.Text, out isnum)))
+            {
+                MessageBox.Show("ISBN는 숫자만 입력해주세요!!!!", "필수항목 누락");
+            }
+            else if (!(int.TryParse(txtSortId.Text, out isnum)))
+            {
+                MessageBox.Show("분류기호는 숫자만 입력해주세요!!!!", "필수항목 누락");
+            }
+            else if (!(int.TryParse(txtRegisterNumber.Text, out isnum)))
+            {
+                MessageBox.Show("등록번호는 숫자만 입력해주세요!!!!", "필수항목 누락");
             }
             else
             {
@@ -122,7 +145,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                Book book = BookManager.Books.Single((x) => x.BookISBN == long.Parse(txtISBN.Text));
+                Book book = BookManager.Books.Single((x) => x.BookRegisterNumber == long.Parse(txtRegisterNumber.Text));
                 book.BookRegisterNumber = int.Parse(txtRegisterNumber.Text);
                 book.BookState = cbState.Text;
                 book.BookName = txtName.Text;
@@ -144,6 +167,16 @@ namespace LibraryManagementSystem
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = BookManager.Books;
+
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+                myConn.Open();
+                MySqlCommand cmd = new MySqlCommand("UPDATE bookmanagement.books SET BookState = '" + book.BookState + "', BookName = '" + book.BookName + "', BookAuthor = '" + book.BookAuthor + "', BookPublish = '" + book.BookPublish +
+                    "', BookSortId = " + book.BookSortId + ", BookAuthorId = '" + book.BookAuthorId + "', BookCharge = '" + book.BookCharge + "', BookCopy = '" + book.BookCopy + "', BookSeperate = '" + book.BookSeperate +
+                    "', BookISBN = " + book.BookISBN + ", BookLocation = '" + book.BookLocation + "', BookImport = '" + book.BookImport + "', BookPublishDate = '" + book.BookPublishDate +
+                    "', BookPage = '" + book.BookPage + "', BookSize = '" + book.BookSize + "', BookPrice = '" + book.BookPrice + "', FullName = '" + book.BookFullName + "' WHERE BookRegisterNumber = " + book.BookRegisterNumber, myConn);
+                cmd.ExecuteNonQuery();
+                myConn.Close();
+
                 MessageBox.Show("도서를 수정했습니다!!!!");
             }
             catch (Exception)
@@ -172,9 +205,9 @@ namespace LibraryManagementSystem
 
                 MessageBox.Show("도서를 삭제했습니다!!!!");
             }
-            catch (Exception exception)
+            catch (Exception)
             {
-                MessageBox.Show(exception.Message);
+                MessageBox.Show("존재하지 않는 도서입니다!!!!");
             }
         }
 
@@ -202,9 +235,5 @@ namespace LibraryManagementSystem
             txtFullName.Text = row.Cells[18].Value.ToString();
         }
 
-        private void txtPublishDate_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

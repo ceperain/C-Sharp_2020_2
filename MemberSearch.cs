@@ -13,5 +13,18 @@ namespace LibraryManagementSystem
             MemberSearchForm form2 = new MemberSearchForm();
             form2.ShowDialog();
         }
+
+        public static string searchQuery(string keyword, string search)
+        {
+            if(keyword == "")
+            {
+                return "select * bookmanagement.members;";
+            }
+            else
+            {
+                return "select * bookmanagement.members" + search + "=" + keyword + ";";
+            }
+            
+        }
     }
 }

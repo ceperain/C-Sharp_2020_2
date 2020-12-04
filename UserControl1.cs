@@ -15,10 +15,17 @@ namespace LibraryManagementSystem
         public UserControl1()
         {
             InitializeComponent();
+            MemberSearchForm.ToControl += new toControl(dataLoad);
+        }
+
+        private void dataLoad(DataGridView dg)
+        {
+            dataGridView1.DataSource = dg.DataSource;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+            
             MemberSearch.PopUp();
         }
 

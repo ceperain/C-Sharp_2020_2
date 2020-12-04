@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
+    public delegate void toControl(DataGridView dg);
     public partial class MemberSearchForm : Form
     {
+        public static event toControl ToControl;
         public MemberSearchForm()
         {
             InitializeComponent();
@@ -72,5 +74,13 @@ namespace LibraryManagementSystem
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ToControl(dataGridView1);
+            //control1.dataGridView1.DataSource = dataGridView1.DataSource;
+        }
+
+        
     }
 }

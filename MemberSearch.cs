@@ -22,8 +22,15 @@ namespace LibraryManagementSystem
             }
             else
             {
+                if(search.Contains("MemberId"))
+                {
+                    return "select * from bookmanagement.members " + search + "=" + keyword + ";";
+                }
+                else
+                {
+                    return "select * from bookmanagement.members " + search + " like '%" + keyword + "%';";
+                }
                 
-                return "select * from bookmanagement.members " + search + "=" + keyword + ";";
             }
             
         }

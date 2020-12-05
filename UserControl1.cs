@@ -15,7 +15,7 @@ namespace LibraryManagementSystem
         public UserControl1()
         {
             InitializeComponent();
-            MemberSearchForm.ToControl += new toControl(dataLoad);
+            MemberSearchForm.SendData += new sendGridData(dataLoad);
         }
 
         private void dataLoad(DataGridView dg)
@@ -33,6 +33,21 @@ namespace LibraryManagementSystem
         {
             Rent_BookSearch rent_bookSearch = new Rent_BookSearch();            
             rent_bookSearch.ShowDialog();
+        }
+
+
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.Rows[dataGridView1.SelectedCells[0].RowIndex];
+                textBox1.Text = selectedRow.Cells[0].Value.ToString();
+                textBox2.Text = selectedRow.Cells[1].Value.ToString();
+                textBox6.Text = selectedRow.Cells[2].Value.ToString();
+                textBox7.Text = selectedRow.Cells[3].Value.ToString();
+                textBox3.Text = selectedRow.Cells[4].Value.ToString();
+            }
         }
     }
 }

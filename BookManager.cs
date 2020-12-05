@@ -36,6 +36,60 @@ namespace LibraryManagementSystem
             }
         }
 
+        /*
+         * 테스트 중인 코드
+         * 
+         */
+        public static List<Book> Load(string query)
+        {
+            List<Book> selBooks = new List<Book>();
+            try
+            {
+                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+
+                MySqlCommand cmd = new MySqlCommand(query, myConn);
+                myConn.Open();
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Book tBook = new Book()
+                    {
+                        /*
+                        MemberId = (int)reader["MemberId"],
+                        MemberName = (string)reader["MemberName"],
+                        MemberPhoneNumber = (string)reader["MemberPhoneNumber"],
+                        MemberState = (string)reader["MemberState"],
+                        MemberAdress = (string)reader["MemberAdress"],
+                        MemberMail = (string)reader["MemberMail"],
+                        MemberJoined = reader["MemberJoined"].ToString()
+                        */
+                    };
+                    selBooks.Add(tBook);
+                }
+
+                //MessageBox.Show("연결됐습니다.");
+                reader.Close();
+                myConn.Close();
+                return selBooks;
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return null;
+            }
+        }
+
+        /*
+         * 
+         */
+
+
+
+
+
         public static void Save()
         {
             try

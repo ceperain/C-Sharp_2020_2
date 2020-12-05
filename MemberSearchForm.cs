@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public delegate void toControl(DataGridView dg);
+    public delegate void sendGridData(DataGridView dg);
     public partial class MemberSearchForm : Form
     {
-        public static event toControl ToControl;
+        public static event sendGridData SendData;
         public MemberSearchForm()
         {
             InitializeComponent();
@@ -23,7 +23,11 @@ namespace LibraryManagementSystem
         {
             dataGridView1.DataSource = "";
             string selected = "";
-            selected = comboBox1.SelectedItem.ToString();
+            if(comboBox1.SelectedItem != null)
+            {
+                selected = comboBox1.SelectedItem.ToString();
+            }
+            
             Console.WriteLine(selected);
             
             string search = "";
@@ -77,7 +81,7 @@ namespace LibraryManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ToControl(dataGridView1);
+            SendData(dataGridView1);
             //control1.dataGridView1.DataSource = dataGridView1.DataSource;
         }
 

@@ -26,7 +26,7 @@ namespace LibraryManagementSystem
                 myConn.Open();
 
                 cmd.ExecuteReader();
-                MessageBox.Show("연결됐습니다.");
+                //MessageBox.Show("연결됐습니다.");
                 myConn.Close();
             }
             catch (Exception)
@@ -61,7 +61,7 @@ namespace LibraryManagementSystem
                     selMembers.Add(tMem);
                 }
                 
-                MessageBox.Show("연결됐습니다.");
+                //MessageBox.Show("연결됐습니다.");
                 reader.Close();
                 myConn.Close();
                 return selMembers;
@@ -92,7 +92,7 @@ namespace LibraryManagementSystem
                 }
                 
                 myConn.Close();
-                MessageBox.Show("데이터베이스에 저장했습니다!!!!");
+                //MessageBox.Show("데이터베이스에 저장했습니다!!!!");
             }
             catch (Exception e)
             {

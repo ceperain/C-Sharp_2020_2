@@ -108,7 +108,7 @@ namespace LibraryManagementSystem
             this.panel1_2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1_2.Location = new System.Drawing.Point(581, 8);
             this.panel1_2.Name = "panel1_2";
-            this.panel1_2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel1_2.Padding = new System.Windows.Forms.Padding(10);
             this.panel1_2.Size = new System.Drawing.Size(540, 613);
             this.panel1_2.TabIndex = 1;
             // 
@@ -573,6 +573,7 @@ namespace LibraryManagementSystem
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(509, 185);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // UserControl3
             // 

@@ -7,36 +7,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-
 namespace LibraryManagementSystem
 {
-    class MemberManager
+    class RentManager
     {
+        /*
+         * save에서 Rent를 쓰기 위함.
+         * 대체할 방법을 생각해보는것도 괜찮다.
+         */
+        public static List<Rent> Rent_M = new List<Rent>();
 
-        public static List<Member> Members = new List<Member>();
-
-        public static void Load()
+        public static List<Rent> Load(string query)
         {
-            try
-            {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
-                MySqlConnection myConn = new MySqlConnection(myConnection);
-
-                MySqlCommand cmd = new MySqlCommand("select * bookmanagement.members;", myConn);
-                myConn.Open();
-
-                cmd.ExecuteReader();
-                //MessageBox.Show("연결됐습니다.");
-                myConn.Close();
-            }
-            catch (Exception)
-            {
-                
-            }
-        }
-        public static List<Member> Load(string query)
-        {
-            List<Member> selMembers = new List<Member>();
+            //출력(return)할 rent
+            List<Rent> oRent = new List<Rent>();
             try
             {
                 string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
@@ -46,25 +30,23 @@ namespace LibraryManagementSystem
                 myConn.Open();
 
                 MySqlDataReader reader = cmd.ExecuteReader();
-                while(reader.Read())
+                while (reader.Read())
                 {
-                    Member tMem = new Member()
+                    //oRent에 추가할 임시 rent
+                    Rent tRent = new Rent()
                     {
-                        MemberId = (int)reader["MemberId"],
-                        MemberName = (string)reader["MemberName"],
-                        MemberPhoneNumber = (string)reader["MemberPhoneNumber"],
-                        MemberState = (string)reader["MemberState"],
-                        MemberAdress = (string)reader["MemberAdress"],
-                        MemberMail = (string)reader["MemberMail"],
-                        MemberJoined = reader["MemberJoined"].ToString().Substring(0, 10)
+                        MemberId = (int) reader["MemberId"],
+                        BookRegisterNumber = (int) reader["BookRegisterNumber"],
+                        Rent_Date = reader["Rent_Date"].ToString().Substring(0, 10),
+                        Rent_Date_Last = reader["Rent_Date_Last"].ToString().Substring(0, 10)
                     };
-                    selMembers.Add(tMem);
+                    oRent.Add(tRent);
                 }
-                
+
                 //MessageBox.Show("연결됐습니다.");
                 reader.Close();
                 myConn.Close();
-                return selMembers;
+                return oRent;
 
             }
             catch (Exception e)
@@ -82,15 +64,16 @@ namespace LibraryManagementSystem
                 //string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 myConn.Open();
-                
-                foreach (var item in Members)
+
+                foreach (var item in Rent_M)
                 {
                     string date = DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day;
                     MySqlCommand cmd = new MySqlCommand(
-                        "INSERT INTO bookmanagement.members VALUES(" + item.MemberId + ", '" + item.MemberName + "', '" + item.MemberPhoneNumber + "', '" + item.MemberState + "', '" + item.MemberAdress + "', '" + item.MemberMail + "', '" + date + "' );", myConn); ;
+                        //insert문 내용 추가할것.
+                        "INSERT INTO bookmanagement.rent VALUES(" + "' );", myConn); ;
                     cmd.ExecuteNonQuery();
                 }
-                
+
                 myConn.Close();
                 //MessageBox.Show("데이터베이스에 저장했습니다!!!!");
             }

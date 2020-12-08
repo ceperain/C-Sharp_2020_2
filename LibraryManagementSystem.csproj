@@ -258,6 +258,7 @@
     <Compile Include="Rent_BookSearch.Designer.cs">
       <DependentUpon>Rent_BookSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchQueryManager.cs" />
     <Compile Include="SignChange1.cs">
       <SubType>Form</SubType>
     </Compile>

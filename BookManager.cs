@@ -56,15 +56,26 @@ namespace LibraryManagementSystem
                 {
                     Book tBook = new Book()
                     {
-                        /*
-                        MemberId = (int)reader["MemberId"],
-                        MemberName = (string)reader["MemberName"],
-                        MemberPhoneNumber = (string)reader["MemberPhoneNumber"],
-                        MemberState = (string)reader["MemberState"],
-                        MemberAdress = (string)reader["MemberAdress"],
-                        MemberMail = (string)reader["MemberMail"],
-                        MemberJoined = reader["MemberJoined"].ToString()
-                        */
+                        Num = (int)reader["Num"],
+                        BookRegisterNumber = (int)reader["BookRegisterNumber"],
+                        BookState = (string) reader["BookState"],
+                        BookName = (string) reader["BookName"],
+                        BookAuthor = (string) reader["BookAuthor"],
+                        BookPublish = (string) reader["BookPublish"],
+                        BookSortId = (int) reader["BookSordId"],
+                        BookAuthorId = (string) reader["BookAuthorId"],
+                        BookCharge = (string) reader["BookCharge"],
+                        BookCopy = (string) reader["BookCopy"],
+                        BookSeperate = (string) reader["BookSeperate"],
+                        BookISBN = (int) reader["BookISBN"],
+                        BookLocation = (string) reader["BookLocation"],
+                        BookImport = (string) reader["BookImport"],
+                        BookPublishDate = (string) reader["BookPublishDate"],
+                        BookPage = (string) reader["BookPage"],
+                        BookSize = (string) reader["BookSize"],
+                        BookPrice = (string) reader["BookPrice"],
+                        BookFullName = (string) reader["BookFullName"]
+
                     };
                     selBooks.Add(tBook);
                 }
@@ -85,7 +96,6 @@ namespace LibraryManagementSystem
         /*
          * 
          */
-
 
 
 

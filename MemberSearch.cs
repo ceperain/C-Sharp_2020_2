@@ -16,25 +16,5 @@ namespace LibraryManagementSystem
             form2.ShowDialog();
         }
 
-        public static string searchQuery(string keyword, string search)
-        {
-            if(keyword == "")
-            {
-                return "select * from bookmanagement.members; ";
-            }
-            else
-            {
-                if(search.Contains("MemberId"))
-                {
-                    return "select * from bookmanagement.members " + search + "=" + keyword + ";";
-                }
-                else
-                {
-                    return "select * from bookmanagement.members " + search + " like '%" + keyword + "%';";
-                }
-                
-            }
-            
-        }
     }
 }

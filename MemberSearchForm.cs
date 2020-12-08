@@ -29,7 +29,8 @@ namespace LibraryManagementSystem
             }
             
             Console.WriteLine(selected);
-            
+
+            string tableName = "members";
             string search = "";
             string keyword = textBox1.Text;
             
@@ -61,7 +62,7 @@ namespace LibraryManagementSystem
             DataTable table = new DataTable();
 
 
-            table.Columns.Add("회원번호", typeof(Int32));
+            table.Columns.Add("회원번호", typeof(int));
             table.Columns.Add("이름", typeof(string));
             table.Columns.Add("상태", typeof(string));
             table.Columns.Add("주소", typeof(string));
@@ -69,7 +70,7 @@ namespace LibraryManagementSystem
             table.Columns.Add("이메일", typeof(string));
             table.Columns.Add("가입일", typeof(string));
 
-            foreach (var item in MemberManager.Load(MemberSearch.searchQuery(keyword, search)))
+            foreach (var item in MemberManager.Load(SearchQueryManager.makeSearchQuery(tableName, search, keyword)))
             {
                 table.Rows.Add(item.MemberId, item.MemberName, item.MemberState, item.MemberAdress, item.MemberPhoneNumber, item.MemberMail, item.MemberJoined);
             }

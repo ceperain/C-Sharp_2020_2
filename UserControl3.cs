@@ -52,5 +52,19 @@ namespace LibraryManagementSystem
                 textBox3.Text = selectedRow.Cells[4].Value.ToString();
             }
         }
+
+        private void dataGridView2_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridView2.Rows[dataGridView2.SelectedCells[0].RowIndex];
+                textBox8.Text = selectedRow.Cells[2].Value.ToString();
+                textBox9.Text = selectedRow.Cells[5].Value.ToString();
+                textBox10.Text = selectedRow.Cells[6].Value.ToString();
+                textBox11.Text = selectedRow.Cells[3].Value.ToString();
+                textBox12.Text = selectedRow.Cells[4].Value.ToString();
+                textBox13.Text = selectedRow.Cells[7].Value.ToString();
+            }
+        }
     }
 }

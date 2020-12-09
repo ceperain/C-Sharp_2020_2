@@ -68,9 +68,11 @@ namespace LibraryManagementSystem
                 foreach (var item in Rent_M)
                 {
                     string date = DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day;
+                    DateTime d = DateTime.Today.AddDays(7);
+                    string date_last = d.Year + "-" + d.Month + "-" + d.Day;
                     MySqlCommand cmd = new MySqlCommand(
                         //insert문 내용 추가할것.
-                        "INSERT INTO bookmanagement.rent VALUES(" + "' );", myConn); ;
+                        "INSERT INTO bookmanagement.rent VALUES(" + item.MemberId + ", " + item.BookRegisterNumber + ", '" + date + "', '" + date_last + "' );", myConn); ;
                     cmd.ExecuteNonQuery();
                 }
 

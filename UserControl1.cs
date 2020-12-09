@@ -15,10 +15,16 @@ namespace LibraryManagementSystem
         public UserControl1()
         {
             InitializeComponent();
-            MemberSearchForm.SendData += new sendGridData(dataLoad);
+            MemberSearchForm.SendData += new sendGridData(MemberDataLoad);
+            Rent_BookSearch.SendData += new sendGridData(RentDataLoad);
         }
 
-        private void dataLoad(DataGridView dg)
+        private void RentDataLoad(DataGridView dg)
+        {
+            dataGridView2.DataSource = dg.DataSource;
+        }
+
+        private void MemberDataLoad(DataGridView dg)
         {
             dataGridView1.DataSource = dg.DataSource;
         }

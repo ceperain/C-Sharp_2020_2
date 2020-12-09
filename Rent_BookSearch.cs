@@ -84,7 +84,7 @@ namespace LibraryManagementSystem
 
 //            table.Columns.Add("예약자", typeof(string));//미사용
             table.Columns.Add("소장위치", typeof(string));
-            table.Columns.Add("반입구분", typeof(string));
+//            table.Columns.Add("반입구분", typeof(string));// 임시 해제
             table.Columns.Add("등록일", typeof(string));
 
             /*
@@ -92,8 +92,22 @@ namespace LibraryManagementSystem
              */
             foreach (var item in BookManager.Load(SearchQueryManager.makeSearchQuery(tableName, search, keyword)))
             {
-                Rent r;
-                table.Rows.Add(item.Num, item.BookState, item.BookRegisterNumber, item.BookName, item.BookAuthor);
+                Rent r = null;
+                Member m = null;
+                if (RentManager.Load("select * from bookmanagement.rent where BookRegisterNumber=" + item.BookRegisterNumber + ";").Count > 0)
+                {
+                    r = RentManager.Load("select * from bookmanagement.rent where BookRegisterNumber=" + item.BookRegisterNumber + ";")[0];
+                    m = MemberManager.Load(SearchQueryManager.makeSearchQuery("members", "MemberId", r.MemberId.ToString()))[0];
+                }
+                if(r != null)
+                {
+                    table.Rows.Add(item.Num, item.BookState, item.BookRegisterNumber, item.BookName, item.BookAuthor, r.Rent_Date, r.Rent_Date_Last, m.MemberName, item.BookLocation, item.BookPublishDate);
+                }
+                else
+                {
+                    table.Rows.Add(item.Num, item.BookState, item.BookRegisterNumber, item.BookName, item.BookAuthor, "-" , "-", "-", item.BookLocation, item.BookPublishDate);
+                }
+                    
             }
             /*
              * 
@@ -103,7 +117,7 @@ namespace LibraryManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            SendData(dataGridView1);
         }
     }
 }

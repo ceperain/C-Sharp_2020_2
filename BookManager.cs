@@ -62,7 +62,7 @@ namespace LibraryManagementSystem
                         BookName = (string) reader["BookName"],
                         BookAuthor = (string) reader["BookAuthor"],
                         BookPublish = (string) reader["BookPublish"],
-                        BookSortId = (int) reader["BookSordId"],
+                        BookSortId = (int) reader["BookSortId"],
                         BookAuthorId = (string) reader["BookAuthorId"],
                         BookCharge = (string) reader["BookCharge"],
                         BookCopy = (string) reader["BookCopy"],
@@ -74,7 +74,7 @@ namespace LibraryManagementSystem
                         BookPage = (string) reader["BookPage"],
                         BookSize = (string) reader["BookSize"],
                         BookPrice = (string) reader["BookPrice"],
-                        BookFullName = (string) reader["BookFullName"]
+                        BookFullName = (string) reader["FullName"]
 
                     };
                     selBooks.Add(tBook);

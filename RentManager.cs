@@ -71,7 +71,6 @@ namespace LibraryManagementSystem
                     DateTime d = DateTime.Today.AddDays(7);
                     string date_last = d.Year + "-" + d.Month + "-" + d.Day;
                     MySqlCommand cmd = new MySqlCommand(
-                        //insert문 내용 추가할것.
                         "INSERT INTO bookmanagement.rent VALUES(" + item.MemberId + ", " + item.BookRegisterNumber + ", '" + date + "', '" + date_last + "' );", myConn); ;
                     cmd.ExecuteNonQuery();
                 }
@@ -84,7 +83,68 @@ namespace LibraryManagementSystem
                 MessageBox.Show("문제가 발생했습니다!!!!");
                 MessageBox.Show(e.Message);
             }
+        }
 
+        //BookRegisterNumber / MemberId
+        public static void RentBook(int rBookRN, int rMemberId)
+        {
+            try
+            {
+                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                //string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+                bool chkBook = false;
+                bool chkMember = false;
+                bool rentAble = false;
+                myConn.Open();
+
+                MySqlCommand cmd = new MySqlCommand(
+                    SearchQueryManager.makeSearchQuery("books", "BookRegisterNumber", rBookRN.ToString()), myConn);
+                MySqlDataReader reader_Book = cmd.ExecuteReader();
+                if (!reader_Book.Read())
+                {
+                    chkBook = false;
+                    MessageBox.Show("107");
+                }
+                else if(((string)reader_Book["BookState"]).Equals("대출가능"))
+                {
+                    MessageBox.Show("111");
+                    chkBook = true;
+                    rentAble = true;
+                }
+                reader_Book.Close();
+
+                cmd = new MySqlCommand(
+                    SearchQueryManager.makeSearchQuery("members", "MemberId", rMemberId.ToString()), myConn);
+                MySqlDataReader reader_Member = cmd.ExecuteReader();
+                if (reader_Member != null) { chkMember = true; }
+                reader_Member.Close();
+
+                if(chkBook && chkMember && rentAble)
+                {
+                    string date = DateTime.Now.Year + "-" + DateTime.Now.Month + "-" + DateTime.Now.Day;
+                    DateTime d = DateTime.Today.AddDays(7);
+                    string date_last = d.Year + "-" + d.Month + "-" + d.Day;
+                    MySqlCommand cmdr = new MySqlCommand(
+                        "INSERT INTO bookmanagement.rent VALUES(" + rMemberId + ", " + rBookRN + ", '" + date + "', '" + date_last + "' );", myConn);
+                    MySqlCommand cmdb = new MySqlCommand(
+                        "UPDATE bookmanagement.books SET BookState='대출중' WHERE BookRegisterNumber=" + rBookRN + ";", myConn);
+                    cmdr.ExecuteNonQuery();
+                    cmdb.ExecuteNonQuery();
+                    MessageBox.Show("도서 대출 성공");
+                }
+                else if(!rentAble)
+                {
+                    MessageBox.Show("현재 대출이 불가능합니다.");
+                }
+                myConn.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("문제가 발생했습니다!!!!");
+                MessageBox.Show(e.StackTrace);
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

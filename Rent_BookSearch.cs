@@ -37,16 +37,16 @@ namespace LibraryManagementSystem
             switch (selected)
             {
                 case "등록번호":
-                    search = "Where BookRegisterNumber";
+                    search = "BookRegisterNumber";
                     break;
                 case "서명":
-                    search = "Where BookName";
+                    search = "BookName";
                     break;
                 case "총서명":
-                    search = "Where BookFullName";
+                    search = "BookFullName";
                     break;
                 case "저자":
-                    search = "Where BookAuthor";
+                    search = "BookAuthor";
                     break;
                 default:
                     break;

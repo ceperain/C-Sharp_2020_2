@@ -37,22 +37,22 @@ namespace LibraryManagementSystem
             switch (selected)
             {
                 case "회원번호":
-                    search = "Where MemberId";
+                    search = "MemberId";
                     break;
                 case "회원명":
-                    search = "Where MemberName";
+                    search = "MemberName";
                     break;
                 case "회원상태":
-                    search = "Where MemberState";
+                    search = "MemberState";
                     break;
                 case "주소":
-                    search = "Where MemberAdress";
+                    search = "MemberAdress";
                     break;
                 case "전화번호":
-                    search = "Where MemberPhoneNumber";
+                    search = "MemberPhoneNumber";
                     break;
                 case "이메일":
-                    search = "Where MemberMail";
+                    search = "MemberMail";
                     break;
                 default:
                     break;

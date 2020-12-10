@@ -155,6 +155,7 @@ namespace LibraryManagementSystem
             this.button16.TabIndex = 24;
             this.button16.Text = "대출";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 

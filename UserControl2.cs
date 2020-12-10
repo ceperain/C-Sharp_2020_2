@@ -64,6 +64,7 @@ namespace LibraryManagementSystem
                 textBox11.Text = selectedRow.Cells[3].Value.ToString();
                 textBox12.Text = selectedRow.Cells[4].Value.ToString();
                 textBox13.Text = selectedRow.Cells[7].Value.ToString();
+                textBox14.Text = selectedRow.Cells[1].Value.ToString();
             }
         }
     }

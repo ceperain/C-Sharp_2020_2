@@ -16,17 +16,16 @@ namespace LibraryManagementSystem
             }
             else
             {
-                if (search.Contains("MemberId"))
+                if (search.Contains("MemberId") || search.Contains("BookRegisterNumber"))
                 {
-                    return "select * from bookmanagement." + table + " " + search + "=" + keyword + ";";
+                    return "select * from bookmanagement." + table + " where " + search + "=" + keyword + ";";
                 }
                 else
                 {
-                    return "select * from bookmanagement." + table + " " + search + " like '%" + keyword + "%';";
+                    return "select * from bookmanagement." + table + " where " + search + " like '%" + keyword + "%';";
                 }
 
             }
-
         }
     }
 }

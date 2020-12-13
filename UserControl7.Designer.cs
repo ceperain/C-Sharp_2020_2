@@ -42,7 +42,7 @@ namespace LibraryManagementSystem
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.registerSearch = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -102,7 +102,6 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.Location = new System.Drawing.Point(23, 23);
             this.button1.Name = "button1";
@@ -110,6 +109,7 @@ namespace LibraryManagementSystem
             this.button1.TabIndex = 2;
             this.button1.Text = "전체선택";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -121,10 +121,10 @@ namespace LibraryManagementSystem
             this.button2.TabIndex = 3;
             this.button2.Text = "Excel 샘플";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button3.Location = new System.Drawing.Point(279, 23);
             this.button3.Name = "button3";
@@ -132,10 +132,10 @@ namespace LibraryManagementSystem
             this.button3.TabIndex = 4;
             this.button3.Text = "새작업";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.Location = new System.Drawing.Point(360, 23);
             this.button4.Name = "button4";
@@ -143,10 +143,10 @@ namespace LibraryManagementSystem
             this.button4.TabIndex = 5;
             this.button4.Text = "일괄저장";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button5.Location = new System.Drawing.Point(441, 23);
             this.button5.Name = "button5";
@@ -154,10 +154,10 @@ namespace LibraryManagementSystem
             this.button5.TabIndex = 6;
             this.button5.Text = "일괄삭제";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button6.Location = new System.Drawing.Point(567, 61);
             this.button6.Name = "button6";
@@ -165,10 +165,10 @@ namespace LibraryManagementSystem
             this.button6.TabIndex = 7;
             this.button6.Text = "이전";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Enabled = false;
             this.button7.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button7.Location = new System.Drawing.Point(672, 61);
             this.button7.Name = "button7";
@@ -176,6 +176,7 @@ namespace LibraryManagementSystem
             this.button7.TabIndex = 8;
             this.button7.Text = "다음";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -220,18 +221,17 @@ namespace LibraryManagementSystem
             this.label1.TabIndex = 12;
             this.label1.Text = "저장된 도서 불러오기 (등록번호)";
             // 
-            // textBox1
+            // registerSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(806, 120);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 29);
-            this.textBox1.TabIndex = 13;
+            this.registerSearch.BackColor = System.Drawing.Color.White;
+            this.registerSearch.Location = new System.Drawing.Point(806, 120);
+            this.registerSearch.Multiline = true;
+            this.registerSearch.Name = "registerSearch";
+            this.registerSearch.Size = new System.Drawing.Size(173, 29);
+            this.registerSearch.TabIndex = 13;
             // 
             // button11
             // 
-            this.button11.Enabled = false;
             this.button11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button11.Location = new System.Drawing.Point(995, 123);
             this.button11.Name = "button11";
@@ -239,6 +239,7 @@ namespace LibraryManagementSystem
             this.button11.TabIndex = 14;
             this.button11.Text = "불러오기";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // groupBox1
             // 
@@ -291,7 +292,7 @@ namespace LibraryManagementSystem
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtISBN);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(521, 155);
+            this.groupBox1.Location = new System.Drawing.Point(533, 157);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(589, 449);
             this.groupBox1.TabIndex = 15;
@@ -301,6 +302,7 @@ namespace LibraryManagementSystem
             // textBox21
             // 
             this.textBox21.BackColor = System.Drawing.Color.Silver;
+            this.textBox21.Enabled = false;
             this.textBox21.Location = new System.Drawing.Point(401, 229);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
@@ -331,6 +333,7 @@ namespace LibraryManagementSystem
             // textBox13
             // 
             this.textBox13.BackColor = System.Drawing.Color.Silver;
+            this.textBox13.Enabled = false;
             this.textBox13.Location = new System.Drawing.Point(349, 33);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
@@ -555,6 +558,7 @@ namespace LibraryManagementSystem
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox14.Enabled = false;
             this.textBox14.Location = new System.Drawing.Point(66, 309);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
@@ -677,6 +681,7 @@ namespace LibraryManagementSystem
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.Silver;
+            this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(66, 190);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -715,6 +720,7 @@ namespace LibraryManagementSystem
             // textBox
             // 
             this.textBox.BackColor = System.Drawing.Color.Silver;
+            this.textBox.Enabled = false;
             this.textBox.Location = new System.Drawing.Point(84, 151);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
@@ -802,7 +808,7 @@ namespace LibraryManagementSystem
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -817,7 +823,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.button14);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.registerSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -853,7 +859,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox registerSearch;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRegisterNumber;

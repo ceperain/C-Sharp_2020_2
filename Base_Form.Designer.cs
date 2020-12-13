@@ -44,9 +44,11 @@ namespace LibraryManagementSystem
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -57,6 +59,7 @@ namespace LibraryManagementSystem
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -70,6 +73,7 @@ namespace LibraryManagementSystem
             this.tabPage3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -235,8 +239,10 @@ namespace LibraryManagementSystem
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.comboBox2);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Controls.Add(this.flowLayoutPanel2);
+            this.tabPage2.Controls.Add(this.comboBox3);
             this.tabPage2.Location = new System.Drawing.Point(4, 42);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -245,18 +251,71 @@ namespace LibraryManagementSystem
             this.tabPage2.Text = "도서관리";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "저장된 도서불러오기",
+            "XML 파일 불러오기",
+            "엑셀 파일 불러오기"});
+            this.comboBox2.Location = new System.Drawing.Point(78, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(134, 20);
+            this.comboBox2.TabIndex = 21;
+            this.comboBox2.Visible = false;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox2.MouseEnter += new System.EventHandler(this.comboBox2_MouseEnter);
+            // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 62);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.comboBox4);
+            this.panel2.Location = new System.Drawing.Point(1, 65);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1136, 629);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownWidth = 120;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "별치기호 일괄수정",
+            "저자기호 일괄수정",
+            "분류기호 일괄수정",
+            "소장위치 일괄수정",
+            "반입구분 일괄수정",
+            "도서상태 일괄수정"});
+            this.comboBox1.Location = new System.Drawing.Point(456, -22);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(10, 20);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "ISBN 중복체크",
+            "청구기호 중복체크"});
+            this.comboBox4.Location = new System.Drawing.Point(231, -22);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(134, 20);
+            this.comboBox4.TabIndex = 23;
+            this.comboBox4.Visible = false;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            this.comboBox4.MouseEnter += new System.EventHandler(this.comboBox4_MouseEnter);
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flowLayoutPanel2.Controls.Add(this.comboBox1);
             this.flowLayoutPanel2.Controls.Add(this.button7);
             this.flowLayoutPanel2.Controls.Add(this.button8);
             this.flowLayoutPanel2.Controls.Add(this.button9);
@@ -273,27 +332,6 @@ namespace LibraryManagementSystem
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1130, 59);
             this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.DropDownWidth = 120;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "별치기호 일괄수정",
-            "저자기호 일괄수정",
-            "분류기호 일괄수정",
-            "소장위치 일괄수정",
-            "반입구분 일괄수정",
-            "도서상태 일괄수정"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 40);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 20);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
             // 
             // button7
             // 
@@ -321,6 +359,7 @@ namespace LibraryManagementSystem
             this.button8.Text = "불러오기";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
             // 
             // button9
             // 
@@ -329,17 +368,18 @@ namespace LibraryManagementSystem
             this.button9.Location = new System.Drawing.Point(150, 0);
             this.button9.Margin = new System.Windows.Forms.Padding(0);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 60);
+            this.button9.Size = new System.Drawing.Size(79, 60);
             this.button9.TabIndex = 12;
-            this.button9.Text = "저장하기";
+            this.button9.Text = "파일로 저장";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.MouseLeave += new System.EventHandler(this.button9_MouseLeave);
             // 
             // button10
             // 
             this.button10.AutoSize = true;
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.Location = new System.Drawing.Point(225, 0);
+            this.button10.Location = new System.Drawing.Point(229, 0);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 60);
@@ -347,12 +387,13 @@ namespace LibraryManagementSystem
             this.button10.Text = "중복체크";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.MouseLeave += new System.EventHandler(this.button10_MouseLeave);
             // 
             // button11
             // 
             this.button11.AutoSize = true;
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.Location = new System.Drawing.Point(300, 0);
+            this.button11.Location = new System.Drawing.Point(304, 0);
             this.button11.Margin = new System.Windows.Forms.Padding(0);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 60);
@@ -365,7 +406,7 @@ namespace LibraryManagementSystem
             // 
             this.button12.AutoSize = true;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Location = new System.Drawing.Point(375, 0);
+            this.button12.Location = new System.Drawing.Point(379, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(0);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 60);
@@ -378,7 +419,7 @@ namespace LibraryManagementSystem
             // 
             this.button13.AutoSize = true;
             this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Location = new System.Drawing.Point(450, 0);
+            this.button13.Location = new System.Drawing.Point(454, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 60);
@@ -391,7 +432,7 @@ namespace LibraryManagementSystem
             // 
             this.button14.AutoSize = true;
             this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.Location = new System.Drawing.Point(525, 0);
+            this.button14.Location = new System.Drawing.Point(529, 0);
             this.button14.Margin = new System.Windows.Forms.Padding(0);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 60);
@@ -404,7 +445,7 @@ namespace LibraryManagementSystem
             // 
             this.button15.AutoSize = true;
             this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.Location = new System.Drawing.Point(600, 0);
+            this.button15.Location = new System.Drawing.Point(604, 0);
             this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 60);
@@ -417,7 +458,7 @@ namespace LibraryManagementSystem
             // 
             this.button16.AutoSize = true;
             this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.Location = new System.Drawing.Point(675, 0);
+            this.button16.Location = new System.Drawing.Point(679, 0);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(87, 60);
@@ -425,6 +466,21 @@ namespace LibraryManagementSystem
             this.button16.Text = "청구기호출력";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "XML 파일 저장",
+            "엑셀 파일 저장"});
+            this.comboBox3.Location = new System.Drawing.Point(153, 43);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(134, 20);
+            this.comboBox3.TabIndex = 22;
+            this.comboBox3.Visible = false;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.comboBox3.MouseEnter += new System.EventHandler(this.comboBox3_MouseEnter);
             // 
             // tabPage1
             // 
@@ -568,6 +624,7 @@ namespace LibraryManagementSystem
             this.tabPage3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
@@ -618,5 +675,8 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }

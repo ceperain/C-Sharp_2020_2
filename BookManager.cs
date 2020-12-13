@@ -23,8 +23,10 @@ namespace LibraryManagementSystem
             {
                 string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
-                myConn.Open();
+
                 MySqlCommand cmd = new MySqlCommand("select * from bookmanagement.books;", myConn);
+                myConn.Open();
+
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -53,10 +55,12 @@ namespace LibraryManagementSystem
                     BookManager.Books.Add(book);
                 }
                 MessageBox.Show("데이터를 불러왔습니다!!!!");
+                reader.Close();
                 myConn.Close();
             }
             catch (Exception ex)
             {
+                MessageBox.Show("데이터를 불러올 수 없습니다!!!!");
                 MessageBox.Show(ex.Message);
             }
         }
@@ -70,39 +74,45 @@ namespace LibraryManagementSystem
                 myConn.Open();
                 foreach (var item in Books)
                 {
-                    int num = item.Num;
-                    int brn = item.BookRegisterNumber;
-                    string bs = item.BookState;
-                    string bn = item.BookName;
-                    string ba = item.BookAuthor;
-                    string bp = item.BookPublish;
-                    int bsi = item.BookSortId;
-                    string bai = item.BookAuthorId;
-                    string bc = item.BookCharge;
-                    string bc2 = item.BookCopy;
-                    string bs2 = item.BookSeperate;
-                    int bisbn = item.BookISBN;
-                    string bl = item.BookLocation;
-                    string bi = item.BookImport;
-                    string bpd = item.BookPublishDate;
-                    string bp2 = item.BookPage;
-                    string bs3 = item.BookSize;
-                    string bp3 = item.BookPrice;
-                    string bfn = item.BookFullName;
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO bookmanagement.books VALUES(" + num + ", " + brn + ", '" + bs + "', '" + bn + "', '" + ba + "', '" + bp + "', '" + 
-                        bsi + "', " + bai + ", '" + bc + "', '" + bc2 + "', '" + bs2 + "', " + bisbn + ", '" + bl + "', '" + bi + "', '" + bpd + "', '" + bp2 + "', '" +
-                        bs3 + "', '" + bp3 + "', '" + bfn + "')", myConn);
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO bookmanagement.books VALUES(" + item.Num + ", " + item.BookRegisterNumber + ", '" + item.BookState + "', '" + item.BookName + "', '" + item.BookAuthor + "', '" + item.BookPublish + "', " +
+                        item.BookSortId + ", '" + item.BookAuthorId + "', '" + item.BookCharge + "', '" + item.BookCopy + "', '" + item.BookSeperate + "', " + item.BookISBN + ", '" + item.BookLocation + "', '" + item.BookImport + "', '" +
+                        item.BookPublishDate + "', '" + item.BookPage + "', '" + item.BookSize + "', '" + item.BookPrice + "', '" + item.BookFullName + "')", myConn);
                     cmd.ExecuteNonQuery();
                 }
                 myConn.Close();
                 MessageBox.Show("데이터베이스에 저장했습니다!!!!");
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                MessageBox.Show("문제가 발생했습니다!!!!");
-                MessageBox.Show(e.Message);
-            }
-            
+                MessageBox.Show("이미 존재하는 도서입니다!!!!");
+            }         
+        }
+
+        public static DataTable TableMake()
+        {
+            DataTable table = new DataTable();
+
+            table.Columns.Add("순번", typeof(int));
+            table.Columns.Add("등록번호", typeof(int));
+            table.Columns.Add("도서상태", typeof(string));
+            table.Columns.Add("도서명", typeof(string));
+            table.Columns.Add("저자", typeof(string));
+            table.Columns.Add("출판사", typeof(string));
+            table.Columns.Add("분류기호", typeof(int));
+            table.Columns.Add("저자기호", typeof(string));
+            table.Columns.Add("권차", typeof(string));
+            table.Columns.Add("복본", typeof(string));
+            table.Columns.Add("별치", typeof(string));
+            table.Columns.Add("ISBN", typeof(int));
+            table.Columns.Add("소장위치", typeof(string));
+            table.Columns.Add("반입구분", typeof(string));
+            table.Columns.Add("출판년도", typeof(string));
+            table.Columns.Add("페이지", typeof(string));
+            table.Columns.Add("사이즈", typeof(string));
+            table.Columns.Add("가격", typeof(string));
+            table.Columns.Add("총도서명", typeof(string));
+
+            return table;
         }
 
     }

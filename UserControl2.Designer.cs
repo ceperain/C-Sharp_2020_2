@@ -202,6 +202,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox18.Location = new System.Drawing.Point(315, 161);
             this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(180, 21);
             this.textBox18.TabIndex = 21;
             // 
@@ -209,6 +210,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox17.Location = new System.Drawing.Point(72, 161);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(178, 21);
             this.textBox17.TabIndex = 20;
             // 
@@ -216,6 +218,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox16.Location = new System.Drawing.Point(226, 131);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(100, 21);
             this.textBox16.TabIndex = 19;
             // 
@@ -223,6 +226,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox15.Location = new System.Drawing.Point(61, 131);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(100, 21);
             this.textBox15.TabIndex = 18;
             // 
@@ -230,6 +234,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox14.Location = new System.Drawing.Point(391, 101);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(104, 21);
             this.textBox14.TabIndex = 17;
             // 
@@ -237,6 +242,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox13.Location = new System.Drawing.Point(226, 101);
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(100, 21);
             this.textBox13.TabIndex = 16;
             // 
@@ -244,6 +250,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox12.Location = new System.Drawing.Point(50, 101);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(111, 21);
             this.textBox12.TabIndex = 15;
             // 
@@ -251,6 +258,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox11.Location = new System.Drawing.Point(50, 67);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(445, 21);
             this.textBox11.TabIndex = 14;
             // 
@@ -258,6 +266,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox10.Location = new System.Drawing.Point(403, 34);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(92, 21);
             this.textBox10.TabIndex = 13;
             // 
@@ -265,6 +274,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox9.Location = new System.Drawing.Point(226, 34);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(100, 21);
             this.textBox9.TabIndex = 12;
             // 
@@ -272,6 +282,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox8.Location = new System.Drawing.Point(72, 34);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(100, 21);
             this.textBox8.TabIndex = 11;
             // 
@@ -528,6 +539,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox2.Location = new System.Drawing.Point(226, 24);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 21);
             this.textBox2.TabIndex = 2;
             // 
@@ -535,6 +547,7 @@ namespace LibraryManagementSystem
             // 
             this.textBox1.Location = new System.Drawing.Point(72, 24);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 1;
             // 
@@ -585,7 +598,9 @@ namespace LibraryManagementSystem
             this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(13, 282);
+            this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView2.RowTemplate.Height = 23;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -601,7 +616,9 @@ namespace LibraryManagementSystem
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 50);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

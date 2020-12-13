@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,10 @@ namespace LibraryManagementSystem
 {
     public partial class Base_Form : Form
     {
-        
+
+        public DataSet ds = new DataSet();
+        public DataGridView dgv = new DataGridView();
+
         public Base_Form()
         {
             InitializeComponent();
@@ -29,9 +33,7 @@ namespace LibraryManagementSystem
         {
             panel1.Controls.Clear();
             UserControl1 userControl1 = new UserControl1();
-            panel1.Controls.Add(userControl1);
-            
-            
+            panel1.Controls.Add(userControl1);   
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,7 +59,6 @@ namespace LibraryManagementSystem
 
         private void button7_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
         }
@@ -65,30 +66,39 @@ namespace LibraryManagementSystem
         
         private void button8_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            UserControl7 userControl = new UserControl7();
-            panel2.Controls.Add(userControl);
-            BookLoad_Form form = new BookLoad_Form();
-            form.ShowDialog();
+            comboBox2.Visible = true;
+            comboBox2.DroppedDown = true; 
+        }
+
+        private void comboBox2_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox2.DroppedDown = true;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            BookManager.Save();
+            comboBox3.Visible = true;
+            comboBox3.DroppedDown = true;
+        }
+
+        private void comboBox3_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox3.DroppedDown = true;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            UserControl7 userControl = new UserControl7();
-            panel2.Controls.Add(userControl);
-            Id_Redundant_Form form = new Id_Redundant_Form();
-            form.ShowDialog();
+            comboBox4.Visible = true;
+            comboBox4.DroppedDown = true;
+        }
+
+        private void comboBox4_MouseEnter(object sender, EventArgs e)
+        {
+            comboBox4.DroppedDown = true;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             Check_Form form = new Check_Form();
@@ -97,7 +107,6 @@ namespace LibraryManagementSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BookSearch bookSearchForm = new BookSearch();
@@ -106,7 +115,6 @@ namespace LibraryManagementSystem
 
         private void button13_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             comboBox1.DroppedDown = true;
@@ -119,7 +127,6 @@ namespace LibraryManagementSystem
 
         private void button14_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BookInformation bookInformation = new BookInformation();
@@ -128,7 +135,6 @@ namespace LibraryManagementSystem
 
         private void button15_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             BarcodePrint barcodePrint = new BarcodePrint();
@@ -137,7 +143,6 @@ namespace LibraryManagementSystem
 
         private void button16_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
             UserControl7 userControl = new UserControl7();
             panel2.Controls.Add(userControl);
             SignPrint signPrint = new SignPrint();
@@ -294,5 +299,128 @@ namespace LibraryManagementSystem
             }
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            Base_Form baseForm = new Base_Form();
+            BookLoad_Form bookLoad1 = new BookLoad_Form();
+            BookLoad_Form bookLoad3 = new BookLoad_Form();
+
+            if (cb.SelectedIndex == 0)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox2.Visible = false;
+                bookLoad1.ShowDialog();
+                bookLoad1.Location = new Point(200, 200);
+            }
+            else if (cb.SelectedIndex == 1)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox2.Visible = false;
+                ds.ReadXml(@"D:\eclipse\git\C-Sharp_2020_2\XMLFile1.xml");
+                dgv.DataSource = ds.Tables[0];
+                userControl.dataLoad(dgv);
+                MessageBox.Show("XML파일의 데이터를 가져왔습니다!!!!");
+            }
+            else if (cb.SelectedIndex == 2)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox2.Visible = false;
+                bookLoad3.ShowDialog();
+                bookLoad3.Location = new Point(200, 200);
+            }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            Base_Form baseForm = new Base_Form();
+            BookLoad_Form bookLoad2 = new BookLoad_Form();
+
+            if (cb.SelectedIndex == 0)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox3.Visible = false;
+                dgv.DataSource = userControl.dataGridView1.DataSource;
+                DataTable dt = GetDataTableFromDGV(dgv);
+                ds.Tables.Add(dt);
+                ds.WriteXml(File.OpenWrite(@"D:\eclipse\git\C-Sharp_2020_2\XMLFile1.xml"));
+                MessageBox.Show("데이터를 XML파일로 저장했습니다!!!!");
+            }
+            else if (cb.SelectedIndex == 1)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox3.Visible = false;
+                bookLoad2.ShowDialog();
+                bookLoad2.Location = new Point(200, 200);
+            }
+        }
+
+        private DataTable GetDataTableFromDGV(DataGridView dgv)
+        {
+            var dt = new DataTable();
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                if (column.Visible)
+                {
+                    dt.Columns.Add();
+                }
+            }
+            object[] cellValues = new object[dgv.Columns.Count];
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                for (int i = 0; i < row.Cells.Count; i++)
+                {
+                    cellValues[i] = row.Cells[i].Value;
+                }
+                dt.Rows.Add(cellValues);
+            }
+            return dt;
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            Base_Form baseForm = new Base_Form();
+            ISBN_Redundant_Form isbn = new ISBN_Redundant_Form();
+            Id_Redundant_Form id = new Id_Redundant_Form();
+
+            if (cb.SelectedIndex == 0)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox4.Visible = false;
+                isbn.ShowDialog();
+                isbn.Location = new Point(200, 200);
+            }
+            if (cb.SelectedIndex == 1)
+            {
+                UserControl7 userControl = new UserControl7();
+                panel2.Controls.Add(userControl);
+                comboBox4.Visible = false;
+                id.ShowDialog();
+                id.Location = new Point(200, 200);
+            }
+        }
+
+        private void button8_MouseLeave(object sender, EventArgs e)
+        {
+            comboBox2.Visible = false;
+        }
+
+        private void button9_MouseLeave(object sender, EventArgs e)
+        {
+            comboBox3.Visible = false;
+        }
+
+        private void button10_MouseLeave(object sender, EventArgs e)
+        {
+            comboBox4.Visible = false;
+        }
     }
 }

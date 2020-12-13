@@ -79,10 +79,8 @@ namespace LibraryManagementSystem
         //대출 버튼
         private void button16_Click(object sender, EventArgs e)
         {
-            int brn;
-            int mId;
-            int.TryParse(textBox8.Text, out brn);
-            int.TryParse(textBox1.Text, out mId);
+            int.TryParse(textBox8.Text, out int brn);
+            int.TryParse(textBox1.Text, out int mId);
             RentManager.RentBook(brn, mId);
         }
     }

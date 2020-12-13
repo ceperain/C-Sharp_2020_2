@@ -67,5 +67,12 @@ namespace LibraryManagementSystem
                 textBox14.Text = selectedRow.Cells[1].Value.ToString();
             }
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            int.TryParse(textBox8.Text, out int brn);
+            int.TryParse(textBox1.Text, out int mId);
+            RentManager.ReturnBook(brn, mId);
+        }
     }
 }

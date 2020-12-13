@@ -108,8 +108,7 @@
             "별치기호",
             "도서상태",
             "소장위치",
-            "반입구분",
-            "등록일"});
+            "반입구분"});
             this.comboBox1.Location = new System.Drawing.Point(186, 10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(84, 21);

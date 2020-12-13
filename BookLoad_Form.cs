@@ -25,7 +25,7 @@ namespace LibraryManagementSystem
         private void button1_Click(object sender, EventArgs e)
         {
             BookManager.Books.Clear(); // 중복 불러오기 방지
-            BookManager.Load();
+            BookManager.AllLoad();
 
             DataTable table = BookManager.TableMake();
 

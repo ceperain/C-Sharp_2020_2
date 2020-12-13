@@ -136,6 +136,7 @@ namespace LibraryManagementSystem
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.Location = new System.Drawing.Point(360, 23);
             this.button4.Name = "button4";
@@ -147,6 +148,7 @@ namespace LibraryManagementSystem
             // 
             // button5
             // 
+            this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button5.Location = new System.Drawing.Point(441, 23);
             this.button5.Name = "button5";

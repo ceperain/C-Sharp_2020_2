@@ -81,5 +81,28 @@ namespace LibraryManagementSystem
         {
           
         }
+
+        //저장버튼
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+            Member member = new Member()
+            {
+                MemberId = int.Parse(mId.Text),
+                MemberName = mName.Text,
+                MemberPhoneNumber = mPhone.Text,
+                MemberState = mState.SelectedItem.ToString(),
+                MemberAdress = mAdress.Text,
+                MemberMail = mMail.Text,
+                MemberJoined = DateTime.Now.ToString()
+            };
+            MemberManager.Members.Add(member);
+            MemberManager.Save();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -96,6 +96,7 @@ namespace LibraryManagementSystem
                 MemberMail = mMail.Text,
                 MemberJoined = DateTime.Now.ToString()
             };
+            MemberManager.Members.Clear();
             MemberManager.Members.Add(member);
             MemberManager.Save();
         }

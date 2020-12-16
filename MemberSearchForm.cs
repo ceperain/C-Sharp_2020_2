@@ -21,61 +21,66 @@ namespace LibraryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = "";
-            string selected = "";
-            if(comboBox1.SelectedItem != null)
+            try
             {
-                selected = comboBox1.SelectedItem.ToString();
-            }
-            
-            Console.WriteLine(selected);
+                dataGridView1.DataSource = "";
+                string selected = "";
+                if (comboBox1.SelectedItem != null)
+                {
+                    selected = comboBox1.SelectedItem.ToString();
+                }
+                Console.WriteLine(selected);
+                string tableName = "members";
+                string search = "";
+                string keyword = textBox1.Text;
+                switch (selected)
+                {
+                    case "회원번호":
+                        search = "MemberId";
+                        break;
+                    case "회원명":
+                        search = "MemberName";
+                        break;
+                    case "회원상태":
+                        search = "MemberState";
+                        break;
+                    case "주소":
+                        search = "MemberAdress";
+                        break;
+                    case "전화번호":
+                        search = "MemberPhoneNumber";
+                        break;
+                    case "이메일":
+                        search = "MemberMail";
+                        break;
+                    default:
+                        break;
+                }
+                Console.WriteLine("search = " + search);
 
-            string tableName = "members";
-            string search = "";
-            string keyword = textBox1.Text;
-            
-            switch (selected)
+                DataTable table = new DataTable();
+
+
+                table.Columns.Add("회원번호", typeof(int));
+                table.Columns.Add("이름", typeof(string));
+                table.Columns.Add("상태", typeof(string));
+                table.Columns.Add("주소", typeof(string));
+                table.Columns.Add("전화번호", typeof(string));
+                table.Columns.Add("이메일", typeof(string));
+                table.Columns.Add("가입일", typeof(string));
+
+                foreach (var item in MemberManager.Load(SearchQueryManager.makeSearchQuery(tableName, search, keyword)))
+                {
+                    table.Rows.Add(item.MemberId, item.MemberName, item.MemberState, item.MemberAdress, item.MemberPhoneNumber, item.MemberMail, item.MemberJoined);
+                }
+                dataGridView1.DataSource = table;
+
+            }
+            catch(Exception ex)
             {
-                case "회원번호":
-                    search = "MemberId";
-                    break;
-                case "회원명":
-                    search = "MemberName";
-                    break;
-                case "회원상태":
-                    search = "MemberState";
-                    break;
-                case "주소":
-                    search = "MemberAdress";
-                    break;
-                case "전화번호":
-                    search = "MemberPhoneNumber";
-                    break;
-                case "이메일":
-                    search = "MemberMail";
-                    break;
-                default:
-                    break;
+                MessageBox.Show("잘못된 검색입니다");
+                //MessageBox.Show(ex.Message);
             }
-            Console.WriteLine("search = " + search);
-
-            DataTable table = new DataTable();
-
-
-            table.Columns.Add("회원번호", typeof(int));
-            table.Columns.Add("이름", typeof(string));
-            table.Columns.Add("상태", typeof(string));
-            table.Columns.Add("주소", typeof(string));
-            table.Columns.Add("전화번호", typeof(string));
-            table.Columns.Add("이메일", typeof(string));
-            table.Columns.Add("가입일", typeof(string));
-
-            foreach (var item in MemberManager.Load(SearchQueryManager.makeSearchQuery(tableName, search, keyword)))
-            {
-                table.Rows.Add(item.MemberId, item.MemberName, item.MemberState, item.MemberAdress, item.MemberPhoneNumber, item.MemberMail, item.MemberJoined);
-            }
-            dataGridView1.DataSource = table;
-            
 
 
         }

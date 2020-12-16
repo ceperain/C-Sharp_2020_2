@@ -14,24 +14,23 @@ namespace LibraryManagementSystem
     {
 
         public static List<Member> Members = new List<Member>();
+        public static string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!fjqm1130!";
 
         public static void Load()
         {
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand("select * bookmanagement.members;", myConn);
                 myConn.Open();
 
                 cmd.ExecuteReader();
-                //MessageBox.Show("연결됐습니다.");
                 myConn.Close();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                
+                MessageBox.Show(e.Message);
             }
         }
         public static List<Member> Load(string query)
@@ -39,7 +38,6 @@ namespace LibraryManagementSystem
             List<Member> selMembers = new List<Member>();
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand(query, myConn);
@@ -61,7 +59,6 @@ namespace LibraryManagementSystem
                     selMembers.Add(tMem);
                 }
                 
-                //MessageBox.Show("연결됐습니다.");
                 reader.Close();
                 myConn.Close();
                 return selMembers;
@@ -78,7 +75,6 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 myConn.Open();
                 
@@ -91,11 +87,9 @@ namespace LibraryManagementSystem
                 }
                 
                 myConn.Close();
-                //MessageBox.Show("데이터베이스에 저장했습니다!!!!");
             }
             catch (Exception e)
             {
-                MessageBox.Show("문제가 발생했습니다!!!!");
                 MessageBox.Show(e.Message);
             }
 

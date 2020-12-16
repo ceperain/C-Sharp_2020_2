@@ -16,14 +16,14 @@ namespace LibraryManagementSystem
          * 대체할 방법을 생각해보는것도 괜찮다.
          */
         public static List<Rent> Rent_M = new List<Rent>();
+        public static string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!fjqm1130!";
 
         public static List<Rent> Load(string query)
         {
             //출력(return)할 rent
             List<Rent> oRent = new List<Rent>();
             try
-            {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
+            {         
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand(query, myConn);
@@ -43,7 +43,6 @@ namespace LibraryManagementSystem
                     oRent.Add(tRent);
                 }
 
-                //MessageBox.Show("연결됐습니다.");
                 reader.Close();
                 myConn.Close();
                 return oRent;
@@ -60,7 +59,6 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 myConn.Open();
 
@@ -75,11 +73,9 @@ namespace LibraryManagementSystem
                 }
 
                 myConn.Close();
-                //MessageBox.Show("데이터베이스에 저장했습니다!!!!");
             }
             catch (Exception e)
             {
-                MessageBox.Show("문제가 발생했습니다!!!!");
                 MessageBox.Show(e.Message);
             }
         }
@@ -89,7 +85,6 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 bool chkBook = false;
                 bool chkMember = false;
@@ -146,7 +141,6 @@ namespace LibraryManagementSystem
             }
             catch (Exception e)
             {
-                MessageBox.Show("문제가 발생했습니다!!!!");
                 MessageBox.Show(e.StackTrace);
                 MessageBox.Show(e.Message);
             }
@@ -158,7 +152,6 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 bool chkBook = false;
                 bool chkMember = false;

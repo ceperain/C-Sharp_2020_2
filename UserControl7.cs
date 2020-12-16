@@ -17,7 +17,6 @@ namespace LibraryManagementSystem
         public int variable = 1;
         public int selectedRow;
         public bool select = false;
-        string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
 
         public UserControl7()
         {
@@ -413,11 +412,6 @@ namespace LibraryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
         }
 
     }

@@ -67,7 +67,6 @@ namespace LibraryManagementSystem
 
         /*
          * 테스트 중인 코드
-         * 
          */
         public static List<Book> Load(string query)
         {
@@ -109,7 +108,6 @@ namespace LibraryManagementSystem
                     selBooks.Add(tBook);
                 }
 
-                //MessageBox.Show("연결됐습니다.");
                 reader.Close();
                 myConn.Close();
                 return selBooks;
@@ -123,7 +121,6 @@ namespace LibraryManagementSystem
         }
 
         /*
-         * 
          */
 
 

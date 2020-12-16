@@ -208,6 +208,7 @@
     <Compile Include="Configuration.Designer.cs">
       <DependentUpon>Configuration.cs</DependentUpon>
     </Compile>
+    <Compile Include="DbConn.cs" />
     <Compile Include="DeleteUser.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -21,7 +21,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand("select * from bookmanagement.books;", myConn);
@@ -73,7 +73,7 @@ namespace LibraryManagementSystem
             List<Book> selBooks = new List<Book>();
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand(query, myConn);
@@ -130,7 +130,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 //string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 myConn.Open();

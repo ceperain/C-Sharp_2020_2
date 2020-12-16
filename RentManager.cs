@@ -23,7 +23,7 @@ namespace LibraryManagementSystem
             List<Rent> oRent = new List<Rent>();
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlCommand cmd = new MySqlCommand(query, myConn);
@@ -60,7 +60,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 //string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 myConn.Open();
@@ -90,7 +90,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 //string myConnection = "datasource=localhost;port=3306;username=root;password=eoghks5953!";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 bool chkBook = false;
@@ -108,7 +108,7 @@ namespace LibraryManagementSystem
                 }
                 else if(((string)reader_Book["BookState"]).Equals("대출가능"))
                 {
-                    MessageBox.Show("111");
+                    //MessageBox.Show("111");
                     chkBook = true;
                     rentAble = true;
                 }
@@ -160,7 +160,7 @@ namespace LibraryManagementSystem
         {
             try
             {
-                string myConnection = "datasource=127.0.0.1;port=3306;username=root;password=jh123456";
+                string myConnection = DbConn.conn;
                 MySqlConnection myConn = new MySqlConnection(myConnection);
                 bool chkBook = false;
                 bool chkMember = false;
